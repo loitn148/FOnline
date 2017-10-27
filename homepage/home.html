@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<title>FOnline - Xem phim HD thả ga</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="topbar row">
+				<div class="logo col-md-2">
+					<img src="../images/logo.png">
+				</div>
+				<div class="topbar-menu menu col-md-5">
+					<div class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">PHIM LẺ</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Phim Hành Động</a></li>
+										<li><a href="">Phim Kinh Dị</a></li>
+										<li><a href="">Phim Hài Hước</a></li>
+										<li><a href="">Phim Võ Thuật</a></li>
+										<li><a href="">Phim Tâm Lý</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">PHIM BỘ</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Phim Trung Quốc</a></li>
+										<li><a href="">Phim Mỹ</a></li>
+										<li><a href="">Phim Hàn Quốc</a></li>
+										<li><a href="">Phim Ấn Độ</a></li>
+										<li><a href="">Phim Việt Nam</a></li>					
+									</ul>
+								</li>
+								<li>
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">QUỐC GIA</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Trung Quốc</a></li>
+										<li><a href="">Mỹ</a></li>
+										<li><a href="">Hàn Quốc</a></li>
+										<li><a href="">Ấn Độ</a></li>
+										<li><a href="">Việt Nam</a></li>						
+									</ul>
+								</li>
+								<li>
+									<a href="" class="dropdown-toggle" data-toggle="dropdown">NĂM PHÁT HÀNH</a>
+									<ul class="dropdown-menu">
+										<li><a href="">Năm 2017</a></li>
+										<li><a href="">Năm 2016</a></li>
+										<li><a href="">Năm 2015</a></li>
+										<li><a href="">Năm 2014</a></li>					
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="search col-md-3">
+					<input type="search" name="search-box" class="search-box" value="Tìm kiếm ...">
+				</div>
+				<div class="account-icon col-md-2">
+					<a href="../account/index.html"><img src="../images/avatar.png"></a>
+				</div>
+			</div>
+			<div class="slideshow row">
+				<div class="slideshow-img">
+
+					<div class="slide-item">
+						<img src="../homepage/slideshow/blade-runner.jpg">
+					</div>
+					<div class="slide-item">
+						<img src="../homepage/slideshow/cuoc-chien-luan-hoi.jpg">
+					</div>
+					<div class="slide-item">
+						<img src="../homepage/slideshow/little-pony.jpg">
+					</div>
+					<div class="slide-item">
+						<img src="../homepage/slideshow/trong-tung-nhip-tho.jpg">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(+1)">&#10095;</a>
+					
+				</div>
+				<div class="dot-img">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+				</div>
+			</div>
+			<div class="filter">
+				
+			</div>
+		</header>
+	</div>
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName('slide-item');
+			var dots = document.getElementsByClassName('dot');
+			if( n > slides.lenght ) { n = 1 }
+			if( n < 1 ) { n = slides.lenght }
+			for (i = 0; i < slides.lenght; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.lenght; i++){
+				dots[i].className = dots[i].className.replace("active", "");
+			}
+			slides[n-1].style.display = "block";
+			dots[n-1].className += "active";
+		}
+	</script>
+</body>
+</html>
