@@ -1,0 +1,182 @@
+﻿.body-content {
+    background:#333;/* url("img/little-pony.jpg");*/
+    padding:20px 70px;
+}
+.view-port{
+    color:#fff;
+}
+.foot-view-port
+{
+    position:relative;
+    height:100px;
+}
+    .foot-view-port .left {
+        position:absolute;
+        left:0;
+    }
+    .foot-view-port .right {
+        position:absolute;
+        right:0;
+    }
+    .foot-view-port .name{
+        font-size:28px;
+        top:0px;
+    }
+    .foot-view-port .view{
+        font-size:20px;
+        top:8px;
+    }
+    .foot-view-port .view img{
+        width:auto;
+        height:45px;
+    }
+.foot-view-port .evaluate{
+        font-size:20px;
+        top:50px;
+    }
+/*side bar*/
+.side-bar{
+    padding:10% 0px;
+    display:flex;
+    justify-content:center;
+}
+.side-bar ul{
+    list-style:none;
+    padding:0;
+}
+.side-bar li{
+    width:120px;
+    height:70px;
+    border-bottom:2px solid #808080;
+    padding:30px 0 0 0;
+    text-align:center;
+}
+.side-bar li button{
+    background:#333;
+    color:#fff;
+    border:none;
+    text-decoration:none;
+    font-size:18px;
+    line-height:30px;
+    padding-left:0;
+}
+.side-bar li .blue-button{
+    background:#4472c4;
+    color:#fff;
+    border:1px solid #4472c4;
+    border-radius:5px;
+    text-decoration:none;
+    width:100%;
+}
+
+.side-bar li .blue-button .like-button img{
+    width:auto;
+    height:25px;
+    margin-top:-5px;
+    margin-right:3px;
+}
+.side-bar li button .icon{
+    padding:0 10px;
+    margin-left:-25px;
+    
+}
+/*tag*/
+.tag{
+    background:#fff;
+    border-radius:3px;
+    margin: 0;
+    padding:0;
+}
+/*title */
+
+.tag .title
+{
+    padding:5px;
+    font-size:20px;
+    color:#000;
+    background:#fff;
+    outline:none;
+    border:2px solid #fff;
+    margin:20px 15px;
+}
+.tag .active{
+    border-bottom:2px solid #4472c4;
+}
+    /*tag item comment*/
+    .tag .tag-item .header-comment
+    {
+        padding:20px 0;
+    }
+    .tag .tag-item .header-comment .avatar
+    {
+        border-radius:50%;
+        width:70px;
+        height:auto;
+    }
+    .tag .tag-item .header-comment input
+    {
+        border-radius:20px;
+        font-size:16px;
+        height:40px;
+        padding:0 10px;
+        outline-color:#fff;
+    }
+    .tag .tag-item .area-comment
+    {
+        background:#e7e6e6;
+        border-bottom-right-radius:3px;
+        border-bottom-left-radius:3px;
+        padding:40px 0;
+    }
+    .tag .tag-item .comment
+    {
+        padding:5px 0;
+        margin-top:5px;
+        display:flex;
+    }
+    .tag .tag-item .comment .avatar
+    {
+        width:40px;
+        height:40px;
+        margin:0 15px;
+    }
+    .tag .tag-item .comment .content
+    {
+        line-height:15px;
+        font-size:18px;
+    }
+    .comment .content .name-user
+    {
+        font-size:18px;
+        font-weight:700;
+        text-decoration:none;
+    }
+    .child
+    {
+        margin-left:60px;
+        border-left:1px solid #4472c4;
+    }
+    .item .thumbnail img{
+    width:100%;
+    height:165px;
+    border-radius:4px;
+}
+.item .title-flim{
+    font-size:16px;
+    font-weight:700;
+    color:#555;
+    text-decoration:none;
+}
+.item .title-flim:hover{
+	color: #FF6347;
+}
+ #tag-comment
+    {
+        display:block;
+    }
+    #tag-relative-film
+    {
+        display:none;
+    }
+
+
