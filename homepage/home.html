@@ -3,11 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="home.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="home.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/wow.min.js"></script>
 	<title>FOnline - Xem phim HD thả ga</title>
 </head>
 <body>
@@ -60,76 +59,162 @@
 					<span class="dot" onclick="currentSlide(3)"></span>
 					<span class="dot" onclick="currentSlide(4)"></span>
 				</div>
-			</div>
-			<div class="filter">
-				<div class="filter-content">
-					<!--Loại phim: lẻ, bộ, chiếu rạp-->
-					<select class="filter-item">
-						<option value="all">Loại phim</option>
-						<option value="phim-le">Phim lẻ</option>
-						<option value="phim-bo">Phim bộ</option>
-						<option value="phim-chieu-rap">Phim chiếu rạp</option>
-					</select>
-					<!--Ngôn ngữ: viet, vietsub, thuyetminh, longtieng-->
-					<select class="filter-item">
-						<option value="all">Ngôn ngữ</option>
-						<option value="phu-de">Phụ đề</option>
-						<option value="thuyet-minh">Thuyết minh</option>
-						<option value="long-tieng">Lồng tiếng</option>
-					</select>
-					<!--Thể loại-->
-					<select class="filter-item">
-						<option value="all">Thể loại</option>
-						<option value="hanh-dong">Hành động</option>
-						<option value="kinh-di">Kinh dị</option>
-						<option value="hai-huoc">Hài hước</option>
-						<option value="tinh-cam">Tình cảm</option>
-						<option value="hoat-hinh">Hoạt hình</option>
-					</select>
-					<!--Quốc gia-->
-					<select class="filter-item">
-						<option value="all">Quốc gia</option>
-						<option value="viet-nam">Việt Nam</option>
-						<option value="my">Mỹ</option>
-						<option value="trung-quoc">Trung Quốc</option>
-						<option value="han-quoc">Hàn Quốc</option>
-						<option value="thai-lan">Thái Lan</option>
-						<option value="anh">Anh</option>
-					</select>
-					<!--Năm phát hành-->
-					<select class="filter-item">
-						<option value="all">Năm phát hành</option>
-						<option value="2017">2017</option>
-						<option value="2016">2016</option>
-						<option value="2015">2015</option>
-						<option value="2014">2014</option>
-						<option value="cu-hon">Trước 2014</option>
-					</select>
-					<button type="button" class="filter-item btn-filter">Lọc phim</button>
+
+				<div class="filter">
+					<div class="filter-content">
+						<!--Loại phim: lẻ, bộ, chiếu rạp-->
+						<select class="filter-item">
+							<option value="all">Loại phim</option>
+							<option value="phim-le">Phim lẻ</option>
+							<option value="phim-bo">Phim bộ</option>
+							<option value="phim-chieu-rap">Phim chiếu rạp</option>
+						</select>
+						<!--Ngôn ngữ: viet, vietsub, thuyetminh, longtieng-->
+						<select class="filter-item">
+							<option value="all">Ngôn ngữ</option>
+							<option value="phu-de">Phụ đề</option>
+							<option value="thuyet-minh">Thuyết minh</option>
+							<option value="long-tieng">Lồng tiếng</option>
+						</select>
+						<!--Thể loại-->
+						<select class="filter-item">
+							<option value="all">Thể loại</option>
+							<option value="hanh-dong">Hành động</option>
+							<option value="kinh-di">Kinh dị</option>
+							<option value="hai-huoc">Hài hước</option>
+							<option value="tinh-cam">Tình cảm</option>
+							<option value="hoat-hinh">Hoạt hình</option>
+						</select>
+						<!--Quốc gia-->
+						<select class="filter-item">
+							<option value="all">Quốc gia</option>
+							<option value="viet-nam">Việt Nam</option>
+							<option value="my">Mỹ</option>
+							<option value="trung-quoc">Trung Quốc</option>
+							<option value="han-quoc">Hàn Quốc</option>
+							<option value="thai-lan">Thái Lan</option>
+							<option value="anh">Anh</option>
+						</select>
+						<!--Năm phát hành-->
+						<select class="filter-item">
+							<option value="all">Năm phát hành</option>
+							<option value="2017">2017</option>
+							<option value="2016">2016</option>
+							<option value="2015">2015</option>
+							<option value="2014">2014</option>
+							<option value="cu-hon">Trước 2014</option>
+						</select>
+						<button type="button" class="filter-item btn-filter">Lọc phim</button>
+					</div>
 				</div>
 			</div>
+			
 		</header>
-		<div id="body-content">
-			<div class="movies-list row">
+		<div id="body-content" class="ro">
+			<!--DANH SÁCH PHIM MỚI-->
+			<div class="movies-list new-film">
 				<div class="movies-list-header">
-					<a href=""> Phim chiếu rạp </a>
+					<div class="triangle-right"></div>
+					<div class="arrow-line">
+						<a href=""><p>Phim mới</p></a>
+					</div>
+					<div class="triangle-left"></div>
 				</div>
-				<div id="Carousel" class="carousel slide movies-list-content">
+				<div id="new-movies-list-content" class="carousel slide carousel-showmanymoveone" data-ride="carousel">
 					<div class="carousel-inner">
-						<div class="item row active">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/ke-ngoai-toc.jpg"></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/kingsman-to-chuc-hoang-kim.jpg"></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/loving-vincent.jpg"></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/sat-thu-vo-hinh.jpg"></a></div>
+						<div class="item active">
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
 						</div>
-						<div class="item row">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/ngay-mai-mai-cuoi.jpg"></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/sieu-bao-dia-cau.jpg"></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/tieng-anh-la-chuyen-nho.jpg"></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="thumbnail/xac-chet-dem-trang.jpg"></a></div>
+
+						<div class="item">
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
 						</div>
-						<a href="#Carousel" data-slide="prev" class="left carousel-control">&#10094;</a>
-						<a href="#Carousel" data-slide="next" class="right carousel-control">&#10095;</a>
+						 						
+						<a href="#new-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+							<p>&#10094;</p>
+						</a>
+						<a href="#new-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+							<p>&#10095;</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		
+
+
+			<!--DANH SÁCH PHIM HOT-->
+			<div class="movies-list hot-film">
+				<div class="movies-list-header">
+					<div class="triangle-right"></div>
+					<div class="arrow-line">
+						<a href=""><p>Phim hay trong tuần</p></a>
+					</div>
+					<div class="triangle-left"></div>
+				</div>
+				<div id="hot-movies-list-content" class="carousel slide carousel-showmanymoveone" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
+						</div>
+
+						<div class="item">
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>			
+						</div>
+						 						
+						<a href="#hot-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+							<p>&#10094;</p>
+						</a>
+						<a href="#hot-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+							<p>&#10095;</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			
+			<!--TRAILER PHIM-->
+			<div class="movies-list trailer">
+				<div class="movies-list-header">
+					<div class="triangle-right"></div>
+					<div class="arrow-line">
+						<a href=""><p>Trailer phim</p></a>
+					</div>
+					<div class="triangle-left"></div>
+				</div>
+				<div id="trailer-movies-list-content" class="carousel slide carousel-showmanymoveone" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
+						</div>
+
+						<div class="item">
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
+							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>			
+						</div>
+						 						
+						<a href="#trailer-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+							<p>&#10094;</p>
+						</a>
+						<a href="#trailer-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+							<p>&#10095;</p>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -149,12 +234,25 @@
                 </div>
                 <div class="right-footer col-md-3">
                     <a class="nomar-text policy">Chính sách bảo mật</a>
-                    <a class="nomar-text">Chính sách bảo mật</a>
+                    <a class="nomar-text">Điều khoản sử dụng</a>
                 </div>
             </div>
         </footer>
 
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {    
+			$('#new-movies-list-content').carousel({        
+				interval: 0   
+			});
+			$('#hot-movies-list-content').carousel({        
+				interval: 0   
+			});
+			$('#trailer-movies-list-content').carousel({        
+				interval: 0   
+			})
+		});
+	</script>
 	<script type="text/javascript" src="home.js"></script>
 	
 </body>
