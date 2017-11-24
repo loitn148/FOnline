@@ -51,8 +51,8 @@
 						<div class="background-slide"></div>
 					</div>
 				</div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(+1)">&#10095;</a>
+				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next-slide" onclick="plusSlides(+1)">&#10095;</a>
 				<div class="dot-swap">
 					<span class="dot" onclick="currentSlide(1)"></span>
 					<span class="dot" onclick="currentSlide(2)"></span>
@@ -102,7 +102,7 @@
 							<option value="2016">2016</option>
 							<option value="2015">2015</option>
 							<option value="2014">2014</option>
-							<option value="cu-hon">Trước 2014</option>
+							<option value="older">Trước 2014</option>
 						</select>
 						<button type="button" class="filter-item btn-filter">Lọc phim</button>
 					</div>
@@ -110,76 +110,162 @@
 			</div>
 			
 		</header>
-		<div id="body-content" class="ro">
+		<div id="body-content">
 			<!--DANH SÁCH PHIM MỚI-->
 			<div class="movies-list new-film">
 				<div class="movies-list-header">
-					<div class="triangle-right"></div>
-					<div class="arrow-line">
-						<a href=""><p>Phim mới</p></a>
-					</div>
-					<div class="triangle-left"></div>
+					<a href="">
+						<div class="triangle-right"></div>
+						<div class="arrow-line"><h1>Phim mới</h1></div>
+						<div class="triangle-left"></div>
+					</a>
 				</div>
-				<div id="new-movies-list-content" class="carousel slide carousel-showmanymoveone" data-ride="carousel">
+				<div id="new-movies-list-content" class="carousel slide carousel-showmanymoveone movies-list-content" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="item active">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
 						</div>
 
 						<div class="item">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
 						</div>
-						 						
-						<a href="#new-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
-							<p>&#10094;</p>
-						</a>
-						<a href="#new-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
-							<p>&#10095;</p>
-						</a>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>	
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>	
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>		
 					</div>
+					<a href="#new-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+						<p>&#10094;</p>
+					</a>
+					<a href="#new-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+						<p>&#10095;</p>
+					</a>
 				</div>
 			</div>
 		
 
 
-			<!--DANH SÁCH PHIM HOT-->
+			<!--DANH SÁCH PHIM HAY-->
 			<div class="movies-list hot-film">
 				<div class="movies-list-header">
-					<div class="triangle-right"></div>
-					<div class="arrow-line">
-						<a href=""><p>Phim hay trong tuần</p></a>
-					</div>
-					<div class="triangle-left"></div>
+					<a href="">
+						<div class="triangle-right"></div>
+						<div class="arrow-line"><h1>Phim hay trong tuần</h1></div>
+						<div class="triangle-left"></div>
+					</a>
 				</div>
-				<div id="hot-movies-list-content" class="carousel slide carousel-showmanymoveone" data-ride="carousel">
+				<div id="hot-movies-list-content" class="carousel slide carousel-showmanymoveone movies-list-content" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="item active">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
 						</div>
 
 						<div class="item">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>			
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
 						</div>
-						 						
-						<a href="#hot-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
-							<p>&#10094;</p>
-						</a>
-						<a href="#hot-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
-							<p>&#10095;</p>
-						</a>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>	
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>	
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="title-film"><h1>Truy lùng quái yêu - Truy lùng quái yêu</h1></a>
+								<p>110 phút - 7.0 IMDb</p>
+							</div>
+						</div>		
 					</div>
+					<a href="#hot-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+						<p>&#10094;</p>
+					</a>
+					<a href="#hot-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+						<p>&#10095;</p>
+					</a>
 				</div>
 			</div>
 
@@ -187,34 +273,115 @@
 			<!--TRAILER PHIM-->
 			<div class="movies-list trailer">
 				<div class="movies-list-header">
-					<div class="triangle-right"></div>
-					<div class="arrow-line">
-						<a href=""><p>Trailer phim</p></a>
-					</div>
-					<div class="triangle-left"></div>
+					<a href="">
+						<div class="triangle-right"></div>
+						<div class="arrow-line"><h1>Trailer phim sắp chiếu</h1></div>
+						<div class="triangle-left"></div>
+					</a>
 				</div>
-				<div id="trailer-movies-list-content" class="carousel slide carousel-showmanymoveone" data-ride="carousel">
+				<div id="trailer-movies-list-content" class="carousel slide carousel-showmanymoveone movies-list-content" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="item active">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
 						</div>
 
 						<div class="item">
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a></div>
-							<div class="col-md-3"><a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a></div>			
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
 						</div>
-						 						
-						<a href="#trailer-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
-							<p>&#10094;</p>
-						</a>
-						<a href="#trailer-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
-							<p>&#10095;</p>
-						</a>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
+						</div>	
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
+						</div>	
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+							</div>
+						</div>		
+					</div>
+					<a href="#trailer-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+						<p>&#10094;</p>
+					</a>
+					<a href="#trailer-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+						<p>&#10095;</p>
+					</a>
+				</div>
+			</div>
+
+
+			<!--TIN TỨC PHIM-->
+			<div class="news-list">
+				<div class="news-list-header">
+					<a href="">
+						<div class="triangle-right"></div>
+						<div class="arrow-line"><h1>TIN TỨC ĐIỆN ẢNH</h1></div>
+						<div class="triangle-left"></div>
+					</a>
+				</div>
+				<div class="news-list-content row">
+					<div class="col-xs-12 col-sm-4 col-md-4 hot-news news-item">
+						<a href="" class="thumbnail"><img src="hotnews/hot-news-1.jpg" ></a>
+						<a href="" class="title-news"><h1>Truy lùng quái yêu</h1></a>
+						<p class="max-lines">
+							Vòng Xoáy Lừa Đảo (The Swindlers) kể về câu chuyện truy tìm tên trùm lừa đảo Jang Doo Chil, kẻ vừa được báo tử cách đó không lâu. “Những kẻ liên quan” đến Doo Chil đánh hơi được tin tức này và nhanh chóng lên kế hoạch truy sát gã. Mỗi người, mỗi mục đích nhưng đã cùng gộp lại chung một đội để “hợp sức” truy sát kẻ thù. Hành trình tìm kiếm Doo Chil không phải dễ dàng, vừa phải lẫn tránh tai mắt của cảnh sát, vừa phải ráo riết lùng sục mọi thông tin dấu vết, đồng nghĩa với việc những kẻ dám tham gia trong phi vụ này đều không phải dạng vừa.
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 hot-news news-item">
+						<a href="" class="thumbnail"><img src="hotnews/hot-news-2.jpg" ></a>
+						<a href="" class="title-news"><h1>Truy lùng quái yêu</h1></a>
+						<p class="max-lines">
+								Mặc dù được giới thiệu phim theo thể loại Tâm lý tội phạm – hành động nhưng khán giả vẫn không khỏi hồi hộp và bất ngờ khi xem những cảnh quay được giới thiệu trong teaser trailer đầu tiên của phim. Điều đó lý giải vì sao teaser ngắn của Cạm Bẫy – Hơi Thở Của Quỷ đã đạt được gần 2 triệu lượt view trên fanpage chính thức của phim.
+							</p>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 news-right-list">
+						<div class="news-item">
+							<a href="" class="small-thumbnail"><img src="hotnews/news-1.jpg"></a>
+							<a href="" class="title-news max-lines"><h1>Bộ phim 20 phút của thuyền trưởng 'Jack Sparrow' có gì hấp dẫn?</h1></a>
+						</div>
+						<div class="news-item">
+							<a href="" class="small-thumbnail"><img src="hotnews/news-2.jpg"></a>
+							<a href="" class="title-news max-lines"><h1>Coco – Nguồn cảm hứng Mexico bất tận chảy tràn trong tác phẩm</h1></a>
+						</div>
+						<div class="news-item">
+							<a href="" class="small-thumbnail"><img src="hotnews/news-3.jpg"></a>
+							<a href="" class="title-news max-lines"><h1>James Franco sẽ có phim siêu anh hùng của riêng mình</h1></a>
+						</div>
+						<div class="news-item">
+							<a href="" class="small-thumbnail"><img src="hotnews/news-4.jpg"></a>
+							<a href="" class="title-news max-lines"><h1>Steppenwolf – Giận thì giận mà thương thì thương</h1></a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -1,5 +1,10 @@
-body{
+h1, h2, h3, h4, h5, h6{
 	font-family: Tahoma;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+p{
+	font-family: sans-serif, Calibri, Helvetica;
 }
 header{
 	width: 100%;
@@ -110,7 +115,7 @@ header{
 	background: linear-gradient(to top, #000, transparent 20%);
     top: 0;
 }
-.prev, .next {
+.prev-slide, .next-slide {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -121,11 +126,11 @@ header{
 	font-weight: 400;
 	font-size: 50px;
 }
-.prev:hover, .next:hover {
+.prev-slide:hover, .next-slide:hover {
 	color: #FF6347;
 	text-decoration: none;
 }
-.next{
+.next-slide{
 	right: 0;
 }
 .dot-swap{
@@ -197,32 +202,35 @@ select{
 	margin: 25px 10px;
 	border: 0px;
 	border-radius: 3px;
-	background-color: #FF6347; 
+	background-color: #ee6123; 
 	color: #fff;
 }
 
-/*--BODY - CHIEURAP--*/
+/*--BODY - LIST PHIM--*/
 /*-------------------------------------*/
 #body-content{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: #eee;
-	padding-top: 80px;
+	margin: 100px 50px 0px 50px;
 }
 .movies-list{
+	/*
 	width: 100%;
-	margin: 20px 0px;
+	margin: 15px 0px;*/
+	padding: 0px 0px 50px 0px;
 }
-.movies-list-header{
+
+/*Header-movies-list*/
+.news-list-header, .movies-list-header{
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	margin: 0px 40px 30px 40px;
+	margin: 0px 0px 30px 0px;
 	position: relative;
 }
-.movies-list-header:before{
+.news-list-header:before , .movies-list-header:before{
 	content: '';
     display: block;
     width: 100%;
@@ -230,6 +238,20 @@ select{
     background: #ee6123;
     position: absolute;
     top: 50%;
+}
+.news-list-header a, .movies-list-header a{
+	text-decoration: none;
+  	z-index: 1;
+}
+.news-list-header a h1, .movies-list-header a h1{
+	margin: auto;
+	font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+.news-list-header a:hover, .movies-list-header a:hover{
+	cursor: pointer;
 }
 .arrow-line{
   background-color: #ee6123;
@@ -240,7 +262,6 @@ select{
   padding: 0px 40px;
   float: left;
   display: flex;
-  z-index: 1;
 }
 .triangle-left{
   height:  0px; 
@@ -249,7 +270,6 @@ select{
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   float: left;
-  z-index: 1;
 }
 .triangle-right{
   height: 0px; 
@@ -258,35 +278,25 @@ select{
   border-right: 20px solid #ee6123;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
-  z-index: 1;
 }
-.arrow-line a{
-	text-decoration: none;
-	color: #fff;
-	font-weight: 600;
-	font-size: 18px;
-	margin: auto;
-}
-.arrow-line a p{
-	margin: 0;
-}
-.arrow-line:hover{
-	cursor: pointer;
-}
+
+/*Content-movies-list*/
+
 .carousel { 
 	margin-bottom: 0;
-	padding: 0px 40px 30px 40px;
 }
 .carousel-control {
 	height: 40px;   
 	width: 40px;
 	font-size: 15px;
 	background-color: #fff;
-	top: 50%;
+	top: 90px;
+	left: -15px;
 	border-radius: 100%;
 	opacity: 1;
 	margin-top: -20px;
 	text-shadow: none;
+	box-shadow: -1px 2px 2px #ccc;
 	display: flex;
 	cursor: pointer;
 }
@@ -308,6 +318,10 @@ select{
 .carousel-control.right, .carousel-control.left {
 	background-image: none;
 }
+.carousel-control.right{
+	right: -15px;
+	box-shadow: 1px 2px 2px #ccc;
+}
 .carouel-inner.active{
 	background-color: none;
 	opacity: 0;
@@ -317,13 +331,85 @@ select{
 	justify-content: center;
 	align-items: center;
 }
-.carouel-inner>.item.active.left{
-	transform: translate3d(0, 0, 0);
+.active.col-md-3:first-child{
+	padding-left: 0px;
 }
-.thumbnail img{
-	height: 165px;
+.item .col-md-3, .item .col-xs-12, .item .col-sm-6{
+	padding: 0px 5px;
+}
+.thumbnail {
+	margin-bottom: 15px;
+}
+.item .thumbnail img{
 	width: 100%;
+	height: 165px;
 }
+.item .title-film, .news-item .title-news{
+	text-decoration: none;
+}
+.item .title-film h1, .news-item .title-news h1{
+	font-size: 16px;
+    font-weight: 700;
+    color: #555;
+}
+.item .title-film h1:hover, .news-item .title-news h1:hover{
+	color: #ee6123;
+}
+
+/*--BODY - LIST TIN TUC--*/
+/*-------------------------------------*/
+.news-list{
+	padding: 0px 0px 30px 0px;
+}
+.news-list-content{
+	margin: 0px -10px;
+}
+.news-item{
+	margin-bottom: 20px;
+}
+.max-lines{
+	overflow: hidden;
+   	text-overflow: ellipsis;
+   	display: -webkit-box;
+   	-webkit-box-orient: vertical;
+   	-webkit-line-clamp: 2;
+   	font-size: 14px;
+   	line-height: 1.5em;
+}
+.small-thumbnail img{
+	width: 60px;
+	height: 60px;
+	border-radius: 3px;
+}
+.news-right-list{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.news-right-list .news-item{
+	margin-bottom: 20px;
+	clear: both;
+	display: flex;
+	align-items: center;
+}
+.small-thumbnail{
+	float: left;
+	margin-right: 20px;
+}
+.news-right-list  .title-news h1{
+	font-weight: 100;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
 /*foot*/
 .foot {
     background:#757171;
@@ -359,3 +445,102 @@ select{
     border-right:1px solid #fff ;
     padding:0 5px;
 }
+
+
+
+.carousel-showmanymoveone .cloneditem-1,.carousel-showmanymoveone .cloneditem-2,.carousel-showmanymoveone .cloneditem-3 {  
+	display: none;
+}
+ 
+@media all and (min-width: 768px) {  
+	.carousel-showmanymoveone .carousel-inner > .active.left,  .carousel-showmanymoveone .carousel-inner > .prev {    
+		left: -50%;  
+	}  
+	.carousel-showmanymoveone .carousel-inner > .active.right,  .carousel-showmanymoveone .carousel-inner > .next {    
+		left: 50%;  
+	}  
+	 
+	.carousel-showmanymoveone .carousel-inner > .left,  .carousel-showmanymoveone .carousel-inner > .prev.right,  .carousel-showmanymoveone .carousel-inner > .active {    
+		left: 0;  
+	}  
+	.carousel-showmanymoveone .carousel-inner .cloneditem-1 {    
+		display: block;  
+	}
+}
+ 
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {  
+	.carousel-showmanymoveone .carousel-inner > .item.active.right,  .carousel-showmanymoveone .carousel-inner > .item.next {    
+	-webkit-transform: translate3d(50%, 0, 0);            
+	transform: translate3d(50%, 0, 0);    
+	left: 0;  
+}  
+ 
+.carousel-showmanymoveone .carousel-inner > .item.active.left,  .carousel-showmanymoveone .carousel-inner > .item.prev {    
+	-webkit-transform: translate3d(-50%, 0, 0);            
+	transform: translate3d(-50%, 0, 0);    
+	left: 0;  
+}  
+ 
+.carousel-showmanymoveone .carousel-inner > .item.left,  .carousel-showmanymoveone .carousel-inner > .item.prev.right,  .carousel-showmanymoveone .carousel-inner > .item.active {    
+	-webkit-transform: translate3d(0, 0, 0);            
+	transform: translate3d(0, 0, 0);    
+	left: 0;  
+	}
+}
+ 
+@media all and (min-width: 992px) {  
+	.carousel-showmanymoveone .carousel-inner > .active.left,  .carousel-showmanymoveone .carousel-inner > .prev {    
+	left: -25%;  
+}  
+ 
+.carousel-showmanymoveone .carousel-inner > .active.right,  .carousel-showmanymoveone .carousel-inner > .next {    
+	left: 25%;  
+}  
+ 
+.carousel-showmanymoveone .carousel-inner > .left,  .carousel-showmanymoveone .carousel-inner > .prev.right,  .carousel-showmanymoveone .carousel-inner > .active {    
+	left: 0;  
+}  
+ 
+.carousel-showmanymoveone .carousel-inner .cloneditem-2,  .carousel-showmanymoveone .carousel-inner .cloneditem-3 {    
+	display: block;  
+	}
+}
+ 
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {  
+	.carousel-showmanymoveone .carousel-inner > .item.active.right,  .carousel-showmanymoveone .carousel-inner > .item.next {    
+		-webkit-transform: translate3d(25%, 0, 0);            
+		transform: translate3d(25%, 0, 0);    
+		left: 0;  
+	}  
+	.carousel-showmanymoveone .carousel-inner > .item.active.left,  .carousel-showmanymoveone .carousel-inner > .item.prev {    
+		-webkit-transform: translate3d(-25%, 0, 0);            
+		transform: translate3d(-25%, 0, 0);    
+		left: 0;  
+	}  
+	.carousel-showmanymoveone .carousel-inner > .item.left,  .carousel-showmanymoveone .carousel-inner > .item.prev.right,  .carousel-showmanymoveone .carousel-inner> .item.active {    
+		-webkit-transform: translate3d(0, 0, 0);            
+		transform: translate3d(0, 0, 0);    
+		left: 0;  
+	}
+}
+ 
+/*.container {  
+	margin-bottom: 10px;
+}*/
+ 
+ 
+/*@media only screen and (min-width: 768px) {  
+	.logo {    
+	margin: 28px;    
+	float: left;  
+	}
+}
+ 
+.title {  
+	padding: 28px;  
+	display: table-cell;  
+	position: relative;  
+	vertical-align: middle;  
+	text-align: center;
+ 
+}*/
