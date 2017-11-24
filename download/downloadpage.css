@@ -1,0 +1,100 @@
+
+.body-content
+{
+    background:url("img/little-pony.png") no-repeat;
+    background-size:cover;
+    padding:100px 0;
+    width:100%;
+}
+/*thum*/
+.thum{
+    margin:0;
+    display:flex;
+    justify-content:center;
+}
+/*detail*/
+.detail{
+    padding:20px 0;
+}
+/*name*/
+.detail .name{
+    margin-bottom:20px;
+}
+.detail .name .wold-name{
+    font-size:36px;
+    color:#ed7d31;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.detail .name .vn-name
+{
+    margin-top:-15px;
+    font-size:26px;
+    color:#fff;
+    font-weight:bold;
+}
+.detail .code
+{
+    padding:10px 0;
+}
+.detail .code p{
+    color:#fff;
+    font-size:20px;
+}
+.detail .code .wrap{
+    padding:0;
+    display:flex;
+}
+.detail .code input
+{
+    font-size:24px;
+    height:45px;
+    width:190px;
+    border-radius:3px;
+}
+.detail .code .wrap div{
+    display:flex;
+    justify-content:center;
+    padding:5px 20px;
+}
+.detail .code .wrap div img{
+    width:150px;
+    height:35px;
+}
+.detail .button-download
+{
+    padding:15px 0;
+}
+.detail .button-download a
+{
+    font-size:20px;
+    color:#fff;
+    font-weight:bold;
+    background:#00b050;
+    border-color:#00b050;
+    padding:10px 5px;
+    text-decoration:none;
+    text-align:center;
+}
+.detail .button-download a:hover
+{
+    border-right:2px solid #045b2c;
+    border-bottom:2px solid #045b2c;
+}
+.detail .button-download a select
+{
+    color:#00b050;
+    font-weight:100;
+    height:36px;
+    border:none;
+}
+@media screen and (max-width:990px)
+{
+    .thum img{
+        width:100%;
+        height:100%;
+    }
+    .detail{
+        margin-left:200px;
+    }
+}

@@ -113,3 +113,11 @@ select{
      .page-list .active{
         background:#fb964f;
     }
+
+     @media screen and (max-width:720px)
+     {
+         .filter
+         {
+             display:none;
+         }
+     }
