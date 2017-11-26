@@ -410,41 +410,7 @@ select{
 
 
 
-/*foot*/
-.foot {
-    background:#757171;
-    padding:30px 0 20px 0;
-    display:flex;
-}
-.foot .left-footer{
-    margin-left:60px;
-    display:flex;
-}
-.foot .left-footer .logo{
-    padding:0 10px;
-}
-.foot .content-footer{
-    line-height:14px;
-}
-.foot .big-text{
-    text-transform:uppercase;
-    font-size:18px;
-    font-weight:700;
-    color:#fff;
-    margin-top:5px;
-}
-.foot .nomar-text{
-     color:#fff;
-}
-.foot .right-footer{
-    margin-top:25px;
-    text-align:right;
-}
-.foot .policy
-{
-    border-right:1px solid #fff ;
-    padding:0 5px;
-}
+
 
 
 
