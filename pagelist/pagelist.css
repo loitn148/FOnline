@@ -1,4 +1,6 @@
-﻿/*--FILTER--*/
+﻿
+@media screen and (max-width:4096px){
+    /*--FILTER--*/
 /*-------------------------------------*/
 .filter{
 	position: absolute;
@@ -113,11 +115,17 @@ select{
      .page-list .active{
         background:#fb964f;
     }
-
-     @media screen and (max-width:720px)
+}
+@media screen and (max-width:768px)
      {
          .filter
          {
              display:none;
          }
      }
+@media screen and (max-width:480px) {
+    .body-content{
+        padding:20px 15px;
+        margin:0;
+    }
+}

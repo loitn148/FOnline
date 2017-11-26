@@ -5,61 +5,98 @@
 	<meta name="viewport" content="width=device-width initial-scale=1">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="masterpage.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<title>FOnline - Xem phim HD thả ga</title>
 </head>
 <body>
-	<div class="container">
-		<header>
-			<div class="topbar row">
-				<div class="logo col-md-2">
-					<a href="../homepage/home.html"><img src="../images/logo.png"></a>
-				</div>
-				<div class="topbar-menu col-md-5">
-					<div class="menu">
-						<div class="menu-item"><a href="#">Chiếu rạp</a></div>
-						<div class="menu-item"><a href="#">Phim lẻ</a></div>
-						<div class="menu-item"><a href="#">Phim bộ</a></div>
-						<div class="menu-item"><a href="#">Thể loại</a></div>
-					</div>
-				</div>
-				<div class="search col-md-3">
-					<input type="search" name="search-box" class="search-box" placeholder="Tìm kiếm...">
-				</div>
-				<div class="account-icon col-md-2">
-					<a href="../account/index.html"><img src="../images/avatar.png"></a>
-				</div>
-			</div>
-			<div class="slideshow row">
-				<div class="slideshow-img">
+    <div class="container">
+        <header>
+            <div class="topbar row">
+                <div class="logo col-md-1 col-xs-2 col-sm-1">
+                    <a href="../homepage/home.html"><img src="../images/logo.png"></a>
+                </div>
+                <div class="topbar-menu col-md-7 col-xs-2 col-sm-8">
+                    <div class="menu">
+                        <div class="wrap-parent-menu">
+                            <div class="menu-item">
+                                <a href="#">Thể loại</a>
+                                <div class="sub-menu">
+                                    <div class="wrap-sub-menu row">
+                                        <div class="col-md-6 col-sm-12 col-xs-6">
+                                            <a href="#">Hành động</a>
+                                            <a href="#">Hài hước</a>
+                                            <a href="#">Kinh dị</a>
+                                            <a href="#">viễn tưởng</a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-xs-6">
+                                            <a href="#">Tâm lý</a>
+                                            <a href="#">Hoạt hình</a>
+                                            <a href="#">Cổ trang</a>
+                                            <a href="#">Võ thuật</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item"><a href="#">Phim lẻ</a></div>
+                            <div class="menu-item"><a href="#">Phim bộ</a></div>
+                            <div class="menu-item"><a href="#">Chiếu rạp</a></div>
+                            <div class="menu-item"><a href="#">Tin tức</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search col-md-3 col-xs-6 col-sm-2">
+                    <input type="search" name="search-box" class="search-box" placeholder="Tìm kiếm...">
+                </div>
+                <div class="account-icon col-md-1 col-sm-1 col-sm-1">
+                    <a href="../account/index.html"><img src="../images/avatar.png"></a>
+                </div>
+            </div>
+            <div class="responsive">
+                <div>
+                    <h1 style="text-align:center;font-weight:bold; font-family:Arial">FONLINE</h1>
+                </div>
+                <div class="r-topbar row " style="background:#ccc">
+                    <div class="navi col-xs-1 col-sm-1">
+                        <div class="icon-menu"><img src="../images/menu.png" /></div>
+                        <ul class="r-menu">
+                            <li>
+                                <a href="#">
+                                    Phim lẻ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Phim bộ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Chiếu rạp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tin Tức
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search col-xs-6 col-sm-6"></div>
+                    <div class="search col-xs-4 col-sm-4">
+                        <input type="search" name="search-box" class="search-box" placeholder="Tìm kiếm...">
+                    </div>
+                    <div class="account-icon col-sm-1 col-sm-1">
+                        <a href="../account/index.html"><img src="../images/avatar.png"></a>
+                    </div>
+                </div>
 
-					<div class="slide-item anim">
-						<img src="../homepage/slideshow/blade-runner.jpg">
-						<div class="background-slide"></div>
-					</div>
-					<div class="slide-item anim">
-						<img src="../homepage/slideshow/sinh-nhat-chet-choc.jpg">
-						<div class="background-slide"></div>
-					</div>
-					<div class="slide-item anim">
-						<img src="../homepage/slideshow/little-pony.jpg">
-						<div class="background-slide"></div>
-					</div>
-					<div class="slide-item anim">
-						<img src="../homepage/slideshow/trong-tung-nhip-tho.jpg">
-						<div class="background-slide"></div>
-					</div>
-				</div>
-				<a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next-slide" onclick="plusSlides(+1)">&#10095;</a>
-				<div class="dot-swap">
-					<span class="dot" onclick="currentSlide(1)"></span>
-					<span class="dot" onclick="currentSlide(2)"></span>
-					<span class="dot" onclick="currentSlide(3)"></span>
-					<span class="dot" onclick="currentSlide(4)"></span>
-				</div>
+            </div>
+            <div class="slideshow row">
+                <div class="slideshow-img">
 
+<<<<<<< HEAD
 				<div class="filter">
 					<div class="filter-content">
 						<!--Loại phim: lẻ, bộ, chiếu rạp-->
@@ -219,8 +256,244 @@
 				</div>
 			</div>
 		
+=======
+                    <div class="slide-item anim">
+                        <img src="../homepage/slideshow/blade-runner.jpg">
+                        <div class="background-slide"></div>
+                    </div>
+                    <div class="slide-item anim">
+                        <img src="../homepage/slideshow/sinh-nhat-chet-choc.jpg">
+                        <div class="background-slide"></div>
+                    </div>
+                    <div class="slide-item anim">
+                        <img src="../homepage/slideshow/little-pony.jpg">
+                        <div class="background-slide"></div>
+                    </div>
+                    <div class="slide-item anim">
+                        <img src="../homepage/slideshow/trong-tung-nhip-tho.jpg">
+                        <div class="background-slide"></div>
+                    </div>
+                </div>
+                <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next-slide" onclick="plusSlides(+1)">&#10095;</a>
+                <div class="dot-swap">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+                <div class="filter">
+                    <div class="filter-content">
+                        <!--Loại phim: lẻ, bộ, chiếu rạp-->
+                        <select class="filter-item">
+                            <option value="all">Loại phim</option>
+                            <option value="phim-le">Phim lẻ</option>
+                            <option value="phim-bo">Phim bộ</option>
+                            <option value="phim-chieu-rap">Phim chiếu rạp</option>
+                        </select>
+                        <!--Ngôn ngữ: viet, vietsub, thuyetminh, longtieng-->
+                        <select class="filter-item">
+                            <option value="all">Ngôn ngữ</option>
+                            <option value="phu-de">Phụ đề</option>
+                            <option value="thuyet-minh">Thuyết minh</option>
+                            <option value="long-tieng">Lồng tiếng</option>
+                        </select>
+                        <!--Thể loại-->
+                        <select class="filter-item">
+                            <option value="all">Thể loại</option>
+                            <option value="hanh-dong">Hành động</option>
+                            <option value="kinh-di">Kinh dị</option>
+                            <option value="hai-huoc">Hài hước</option>
+                            <option value="tinh-cam">Tình cảm</option>
+                            <option value="hoat-hinh">Hoạt hình</option>
+                        </select>
+                        <!--Quốc gia-->
+                        <select class="filter-item">
+                            <option value="all">Quốc gia</option>
+                            <option value="viet-nam">Việt Nam</option>
+                            <option value="my">Mỹ</option>
+                            <option value="trung-quoc">Trung Quốc</option>
+                            <option value="han-quoc">Hàn Quốc</option>
+                            <option value="thai-lan">Thái Lan</option>
+                            <option value="anh">Anh</option>
+                        </select>
+                        <!--Năm phát hành-->
+                        <select class="filter-item">
+                            <option value="all">Năm phát hành</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="older">Trước 2014</option>
+                        </select>
+                        <button type="button" class="filter-item btn-filter">Lọc phim</button>
+                    </div>
+                </div>
+            </div>
+>>>>>>> ebe31afa4e163c74f23435d7e1df45b77f3909a9
+
+        </header>
+        <div id="body-content">
+            <!--DANH SÁCH PHIM MỚI-->
+            <div class="movies-list new-film">
+                <div class="movies-list-header">
+                    <a href="">
+                        <div class="triangle-right"></div>
+                        <div class="arrow-line"><h1>Phim mới</h1></div>
+                        <div class="triangle-left"></div>
+                    </a>
+                </div>
+                <div id="new-movies-list-content" class="carousel slide carousel-showmanymoveone movies-list-content" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-1.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-2.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-3.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-4.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-2.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-1.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-4.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-3.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#new-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+                        <p>&#10094;</p>
+                    </a>
+                    <a href="#new-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+                        <p>&#10095;</p>
+                    </a>
+                </div>
+            </div>
 
 
+
+            <!--DANH SÁCH PHIM HAY-->
+            <div class="movies-list hot-film">
+                <div class="movies-list-header">
+                    <a href="">
+                        <div class="triangle-right"></div>
+                        <div class="arrow-line"><h1>Phim hay trong tuần</h1></div>
+                        <div class="triangle-left"></div>
+                    </a>
+                </div>
+                <div id="hot-movies-list-content" class="carousel slide carousel-showmanymoveone movies-list-content" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-1.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-2.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-3.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-4.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-2.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-1.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-4.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-3.jpg"></a>
+                                <a href="" class="title-film"><h1>Truy lùng quái yêu - Truy lùng quái yêu</h1></a>
+                                <p>110 phút - 7.0 IMDb</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#hot-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+                        <p>&#10094;</p>
+                    </a>
+                    <a href="#hot-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+                        <p>&#10095;</p>
+                    </a>
+                </div>
+            </div>
+
+<<<<<<< HEAD
 			<!--DANH SÁCH PHIM HAY-->
 			<div class="movies-list hot-film">
 				<div class="movies-list-header">
@@ -439,74 +712,145 @@
 					</a>
 				</div>
 			</div>
+=======
 
+            <!--TRAILER PHIM-->
+            <div class="movies-list trailer">
+                <div class="movies-list-header">
+                    <a href="">
+                        <div class="triangle-right"></div>
+                        <div class="arrow-line"><h1>Trailer phim sắp chiếu</h1></div>
+                        <div class="triangle-left"></div>
+                    </a>
+                </div>
+                <div id="trailer-movies-list-content" class="carousel slide carousel-showmanymoveone movies-list-content" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-1.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-2.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-3.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-4.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
 
-			<!--TIN TỨC PHIM-->
-			<div class="news-list">
-				<div class="news-list-header">
-					<a href="">
-						<div class="triangle-right"></div>
-						<div class="arrow-line"><h1>TIN TỨC ĐIỆN ẢNH</h1></div>
-						<div class="triangle-left"></div>
-					</a>
-				</div>
-				<div class="news-list-content row">
-					<div class="col-xs-12 col-sm-4 col-md-4 hot-news news-item">
-						<a href="" class="thumbnail"><img src="hotnews/hot-news-1.jpg" ></a>
-						<a href="" class="title-news"><h1>Truy lùng quái yêu</h1></a>
-						<p class="max-lines">
-							Vòng Xoáy Lừa Đảo (The Swindlers) kể về câu chuyện truy tìm tên trùm lừa đảo Jang Doo Chil, kẻ vừa được báo tử cách đó không lâu. “Những kẻ liên quan” đến Doo Chil đánh hơi được tin tức này và nhanh chóng lên kế hoạch truy sát gã. Mỗi người, mỗi mục đích nhưng đã cùng gộp lại chung một đội để “hợp sức” truy sát kẻ thù. Hành trình tìm kiếm Doo Chil không phải dễ dàng, vừa phải lẫn tránh tai mắt của cảnh sát, vừa phải ráo riết lùng sục mọi thông tin dấu vết, đồng nghĩa với việc những kẻ dám tham gia trong phi vụ này đều không phải dạng vừa.
-						</p>
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 hot-news news-item">
-						<a href="" class="thumbnail"><img src="hotnews/hot-news-2.jpg" ></a>
-						<a href="" class="title-news"><h1>Truy lùng quái yêu</h1></a>
-						<p class="max-lines">
-								Mặc dù được giới thiệu phim theo thể loại Tâm lý tội phạm – hành động nhưng khán giả vẫn không khỏi hồi hộp và bất ngờ khi xem những cảnh quay được giới thiệu trong teaser trailer đầu tiên của phim. Điều đó lý giải vì sao teaser ngắn của Cạm Bẫy – Hơi Thở Của Quỷ đã đạt được gần 2 triệu lượt view trên fanpage chính thức của phim.
-							</p>
-					</div>
-					<div class="col-xs-12 col-sm-4 col-md-4 news-right-list">
-						<div class="news-item">
-							<a href="" class="small-thumbnail"><img src="hotnews/news-1.jpg"></a>
-							<a href="" class="title-news max-lines"><h1>Bộ phim 20 phút của thuyền trưởng 'Jack Sparrow' có gì hấp dẫn?</h1></a>
-						</div>
-						<div class="news-item">
-							<a href="" class="small-thumbnail"><img src="hotnews/news-2.jpg"></a>
-							<a href="" class="title-news max-lines"><h1>Coco – Nguồn cảm hứng Mexico bất tận chảy tràn trong tác phẩm</h1></a>
-						</div>
-						<div class="news-item">
-							<a href="" class="small-thumbnail"><img src="hotnews/news-3.jpg"></a>
-							<a href="" class="title-news max-lines"><h1>James Franco sẽ có phim siêu anh hùng của riêng mình</h1></a>
-						</div>
-						<div class="news-item">
-							<a href="" class="small-thumbnail"><img src="hotnews/news-4.jpg"></a>
-							<a href="" class="title-news max-lines"><h1>Steppenwolf – Giận thì giận mà thương thì thương</h1></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-2.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-1.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-4.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <a href="" class="thumbnail"><img src="slideshow/phim-3.jpg"></a>
+                                <a href="" class="title-film"><h4>Truy lùng quái yêu</h4></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#trailer-movies-list-content" data-slide="prev" class="left carousel-control" data-slide="prev">
+                        <p>&#10094;</p>
+                    </a>
+                    <a href="#trailer-movies-list-content" data-slide="next" class="right carousel-control" data-slide="next">
+                        <p>&#10095;</p>
+                    </a>
+                </div>
+            </div>
+
+>>>>>>> ebe31afa4e163c74f23435d7e1df45b77f3909a9
+
+            <!--TIN TỨC PHIM-->
+            <div class="news-list">
+                <div class="news-list-header">
+                    <a href="">
+                        <div class="triangle-right"></div>
+                        <div class="arrow-line"><h1>TIN TỨC ĐIỆN ẢNH</h1></div>
+                        <div class="triangle-left"></div>
+                    </a>
+                </div>
+                <div class="news-list-content row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 hot-news news-item">
+                        <a href="" class="thumbnail"><img src="hotnews/hot-news-1.jpg"></a>
+                        <a href="" class="title-news"><h1>Truy lùng quái yêu</h1></a>
+                        <p class="max-lines">
+                            Vòng Xoáy Lừa Đảo (The Swindlers) kể về câu chuyện truy tìm tên trùm lừa đảo Jang Doo Chil, kẻ vừa được báo tử cách đó không lâu. “Những kẻ liên quan” đến Doo Chil đánh hơi được tin tức này và nhanh chóng lên kế hoạch truy sát gã. Mỗi người, mỗi mục đích nhưng đã cùng gộp lại chung một đội để “hợp sức” truy sát kẻ thù. Hành trình tìm kiếm Doo Chil không phải dễ dàng, vừa phải lẫn tránh tai mắt của cảnh sát, vừa phải ráo riết lùng sục mọi thông tin dấu vết, đồng nghĩa với việc những kẻ dám tham gia trong phi vụ này đều không phải dạng vừa.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 hot-news news-item">
+                        <a href="" class="thumbnail"><img src="hotnews/hot-news-2.jpg"></a>
+                        <a href="" class="title-news"><h1>Truy lùng quái yêu</h1></a>
+                        <p class="max-lines">
+                            Mặc dù được giới thiệu phim theo thể loại Tâm lý tội phạm – hành động nhưng khán giả vẫn không khỏi hồi hộp và bất ngờ khi xem những cảnh quay được giới thiệu trong teaser trailer đầu tiên của phim. Điều đó lý giải vì sao teaser ngắn của Cạm Bẫy – Hơi Thở Của Quỷ đã đạt được gần 2 triệu lượt view trên fanpage chính thức của phim.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 news-right-list">
+                        <div class="news-item">
+                            <a href="" class="small-thumbnail"><img src="hotnews/news-1.jpg"></a>
+                            <a href="" class="title-news max-lines"><h1>Bộ phim 20 phút của thuyền trưởng 'Jack Sparrow' có gì hấp dẫn?</h1></a>
+                        </div>
+                        <div class="news-item">
+                            <a href="" class="small-thumbnail"><img src="hotnews/news-2.jpg"></a>
+                            <a href="" class="title-news max-lines"><h1>Coco – Nguồn cảm hứng Mexico bất tận chảy tràn trong tác phẩm</h1></a>
+                        </div>
+                        <div class="news-item">
+                            <a href="" class="small-thumbnail"><img src="hotnews/news-3.jpg"></a>
+                            <a href="" class="title-news max-lines"><h1>James Franco sẽ có phim siêu anh hùng của riêng mình</h1></a>
+                        </div>
+                        <div class="news-item">
+                            <a href="" class="small-thumbnail"><img src="hotnews/news-4.jpg"></a>
+                            <a href="" class="title-news max-lines"><h1>Steppenwolf – Giận thì giận mà thương thì thương</h1></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <!--footer-->
         <footer>
-            <div class="foot row">
-                <div class="left-footer col-md-8">
+            <div class="foot">
+                <div class="left-footer">
                     <div class="logo">
                         <img src="../images/logo.png">
                     </div>
-                    <div class="content-footer col-md-4">
+                    <div class="content-footer">
                         <p class="big-text">Xem phim hd thả ga </p>
                         <p class="nomar-text">Copyright 2017 www.fonline.com</p>
                     </div>
                 </div>
-                <div class="right-footer col-md-3">
+                <div class="right-footer">
+                    <a class="nomar-text">Chính sách bảo mật</a>
                     <a class="nomar-text policy">Chính sách bảo mật</a>
-                    <a class="nomar-text">Điều khoản sử dụng</a>
                 </div>
             </div>
         </footer>
-
-	</div>
+    </div>
 	<script type="text/javascript">
 		$(document).ready(function() {    
 			$('#new-movies-list-content').carousel({        
@@ -521,6 +865,7 @@
 		});
 	</script>
 	<script type="text/javascript" src="home.js"></script>
+    <script src="masterpage.js"></script>
 	
 </body>
 </html>

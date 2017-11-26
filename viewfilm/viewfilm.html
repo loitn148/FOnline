@@ -15,23 +15,84 @@
     <div class="container">
         <header>
             <div class="topbar row">
-                <div class="logo col-md-2">
+                <div class="logo col-md-1 col-xs-2 col-sm-1">
                     <a href="../homepage/home.html"><img src="../images/logo.png"></a>
                 </div>
-                <div class="topbar-menu col-md-5">
+                <div class="topbar-menu col-md-7 col-xs-2 col-sm-8">
                     <div class="menu">
-                        <div class="menu-item"><a href="#">Thể loại</a></div>
-                        <div class="menu-item"><a href="#">Phim lẻ</a></div>
-                        <div class="menu-item"><a href="#">Phim bộ</a></div>
-                        <div class="menu-item"><a href="#">Chiếu rạp</a></div>
+                        <div class="wrap-parent-menu">
+                            <div class="menu-item">
+                                <a href="#">Thể loại</a>
+                                <div class="sub-menu">
+                                    <div class="wrap-sub-menu row">
+                                        <div class="col-md-6 col-sm-12 col-xs-6">
+                                            <a href="#">Hành động</a>
+                                            <a href="#">Hài hước</a>
+                                            <a href="#">Kinh dị</a>
+                                            <a href="#">viễn tưởng</a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 col-xs-6">
+                                            <a href="#">Tâm lý</a>
+                                            <a href="#">Hoạt hình</a>
+                                            <a href="#">Cổ trang</a>
+                                            <a href="#">Võ thuật</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-item"><a href="#">Phim lẻ</a></div>
+                            <div class="menu-item"><a href="#">Phim bộ</a></div>
+                            <div class="menu-item"><a href="#">Chiếu rạp</a></div>
+                            <div class="menu-item"><a href="#">Tin tức</a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="search col-md-3">
+                <div class="search col-md-3 col-xs-6 col-sm-2">
                     <input type="search" name="search-box" class="search-box" placeholder="Tìm kiếm...">
                 </div>
-                <div class="account-icon col-md-2">
+                <div class="account-icon col-md-1 col-sm-1 col-sm-1">
                     <a href="../account/index.html"><img src="../images/avatar.png"></a>
                 </div>
+            </div>
+            <div class="responsive">
+                <div>
+                    <h1 style="text-align:center;font-weight:bold; font-family:Arial">FONLINE</h1>
+                </div>
+                <div class="r-topbar row " style="background:#ccc">
+                    <div class="navi col-xs-1 col-sm-1">
+                        <div class="icon-menu"><img src="../images/menu.png" /></div>
+                        <ul class="r-menu">
+                            <li>
+                                <a href="#">
+                                    Phim lẻ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Phim bộ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Chiếu rạp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Tin Tức
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search col-xs-6 col-sm-6"></div>
+                    <div class="search col-xs-4 col-sm-4">
+                        <input type="search" name="search-box" class="search-box" placeholder="Tìm kiếm...">
+                    </div>
+                    <div class="account-icon col-sm-1 col-sm-1">
+                        <a href="../account/index.html"><img src="../images/avatar.png"></a>
+                    </div>
+                </div>
+                
             </div>
         </header>
         <div class="body-content row">
@@ -172,4 +233,5 @@
     </div>
 </body>
 <script src="viewfilm.js"></script>
+<script src="masterpage.js"></script>
 </html>
