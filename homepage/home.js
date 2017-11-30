@@ -1,8 +1,9 @@
+
 var slides = document.getElementsByClassName('slide-item');
 var dots = document.getElementsByClassName('dot');
 var slideIndex = 1;
 showSlides();
-var show = setInterval(showSlides, 3000);
+var show = setInterval(showSlides, 5000);
 
 function showSlides() {
 	for (var i = 0; i < slides.length; i++) {
@@ -26,17 +27,33 @@ function plusSlides(n) {
 	slideIndex += n;
 	showSlides();
 	clearInterval(show);
-	show = setInterval(showSlides, 3000);
+	show = setInterval(showSlides, 5000);
 }
 
 function currentSlide(n) {
 	slideIndex = n;
 	showSlides();
 	clearInterval(show);
-	show = setInterval(showSlides, 3000);
+	show = setInterval(showSlides, 5000);
 }
 
-(function(){  $('.carousel-showmanymoveone .item').each(function(){    
+
+function onMouseOver(){
+	document.getElementsByClassName('slide-info-film')[0].style.visibility = "visible";
+	document.getElementsByClassName('slide-info-film')[0].style.transition = "all 2s";
+	document.querySelector('.slide-info-film p').style.maxHeight = "6em";
+	document.getElementsByClassName('play-film')[0].style.visibility = "visible";
+	clearInterval(show);
+		
+}
+function onMouseOut(){
+	document.getElementsByClassName('slide-info-film')[0].style.visibility = "hidden";
+	document.getElementsByClassName('play-film')[0].style.visibility = "hidden";
+	show = setInterval(showSlides, 5000);
+}
+
+
+(function(){  $('.carousel-showmanymoveone .item ').each(function(){    
 
 		var itemToClone = $(this);
     	for (var i = 1; i < 4; i++) {      

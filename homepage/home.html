@@ -93,7 +93,7 @@
                 </div>
 
             </div>
-            <div class="slideshow row">
+            <div class="slideshow row"  onmouseover="onMouseOver()" onmouseout="onMouseOut()">
                 <div class="slideshow-img">
                 	<div class="slide-item anim">
                         <img src="../homepage/slideshow/blade-runner.jpg">
@@ -114,11 +114,34 @@
                 </div>
                 <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next-slide" onclick="plusSlides(+1)">&#10095;</a>
+                <a class="play-film" href=""><img src="icon/play-button.png"></a>
                 <div class="dot-swap">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <div class="slide-info-film">
+                	<h1>Tên phim của nhà sản xuất</h1>
+                	<h2>Tên phim vietsub</h2>
+                	<span class="box">7.0 IMDb</span>
+                	<span class="box">HD</span>
+                	<span class="box">VS</span>
+                	<ul>
+                		<li>Mỹ</li>
+                        <li>2017</li>
+                        <li>110 phút</li>
+                    </ul>
+                   	<ul>
+                   		Phim lẻ, phim hành động, phim hài hước
+                   	</ul>
+                	<p>
+                        Trong phim Tội Phạm Người Máy, Rick Deckard, một cảnh sát đã về hưu đang sống
+                        ở Los Angeles vào năm 2019. Khi đó, thành phố này đã trở thành một trong những
+                        nơi tối tăm nhất trên Trái Đất, ô nhiễm trầm trọng, những cỗ máy bay lượn đầy trời.
+                        Người máy gần như giống hệt con người được chế tạo ra để phục vụ cho công cuộc khai thác,
+                        xâm lấn các hành tinh khác. 
+                    </p>
                 </div>
                 <div class="filter">
                     <div class="filter-content">
@@ -184,7 +207,7 @@
 					<div class="carousel-inner">
 						<div class="item active">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-1.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -196,7 +219,20 @@
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-2.jpg" ></a>
+								<div class="film-info">
+									<a href="" class="title-film">
+										<h1>Tên phim của nhà sản xuất</h1>
+										<h2>Tên phim vietsub</h2>
+									</a>
+									<p>110 phút - 7.0 IMDb</p>
+									<span class="more-info">CAM</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
+								<a href="" class="thumbnail"><img src="thumbnail/phim-3.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -208,19 +244,7 @@
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
-								<div class="film-info">
-									<a href="" class="title-film">
-										<h1>Tên phim của nhà sản xuất</h1>
-										<h2>Tên phim vietsub</h2>
-									</a>
-									<p>110 phút - 7.0 IMDb</p>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-4.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -233,7 +257,7 @@
 
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-5.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -245,7 +269,20 @@
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-6.jpg" ></a>
+								<div class="film-info">
+									<a href="" class="title-film">
+										<h1>Tên phim của nhà sản xuất</h1>
+										<h2>Tên phim vietsub</h2>
+									</a>
+									<p>110 phút - 7.0 IMDb</p>
+									<span class="more-info">CAM</span>
+								</div>
+							</div>
+						</div>	
+						<div class="item">
+							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
+								<a href="" class="thumbnail"><img src="thumbnail/phim-7.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -257,19 +294,7 @@
 						</div>	
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
-								<div class="film-info">
-									<a href="" class="title-film">
-										<h1>Tên phim của nhà sản xuất</h1>
-										<h2>Tên phim vietsub</h2>
-									</a>
-									<p>110 phút - 7.0 IMDb</p>
-								</div>
-							</div>
-						</div>	
-						<div class="item">
-							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-8.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -303,7 +328,7 @@
 					<div class="carousel-inner">
 						<div class="item active">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-5.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -315,7 +340,7 @@
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-9.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -327,19 +352,20 @@
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-11.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
-									<p>110 phút - 7.0 IMDb</p>
+									<p>40 tập - 7.0 IMDb</p>
+									<span class="more-info">29<span style="font-size: 10px; font-weight: 100">/40</span></span>
 								</div>
 							</div>
 						</div>
 						<div class="item">
 							<div class="ccol-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-2.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -352,7 +378,7 @@
 
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-4.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -364,7 +390,7 @@
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-1.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -376,19 +402,20 @@
 						</div>	
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-6.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>110 phút - 7.0 IMDb</p>
+									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>	
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-10.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
@@ -421,107 +448,99 @@
 				<div id="trailer-movies-list-content" class="carousel slide carousel-showmanymoveone movies-list-content" data-ride="carousel">
 					<div class="carousel-inner">
 						<div class="item active">
-							<div class="col-xs-12 col-sm-6 col-md-3">
-								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
+								<a href="" class="thumbnail"><img src="thumbnail/phim-1.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-2.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-3.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-4.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>
 
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-2.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-2.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>
 						<div class="item">
 							<div class="col-xs-12 col-sm-6 col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-1.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-1.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>	
 						<div class="item">
 							<div class="col-xs-12 col-sm-6  col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-4.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-4.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>	
 						<div class="item">
 							<div class="col-xs-12 col-sm-6  col-md-3 film-item">
-								<a href="" class="thumbnail"><img src="slideshow/phim-3.jpg" ></a>
+								<a href="" class="thumbnail"><img src="thumbnail/phim-3.jpg" ></a>
 								<div class="film-info">
 									<a href="" class="title-film">
 										<h1>Tên phim của nhà sản xuất</h1>
 										<h2>Tên phim vietsub</h2>
 									</a>
 									<p>Khởi chiếu: 22/10/2017</p>
-									<span class="more-info">CAM</span>
 								</div>
 							</div>
 						</div>		
@@ -546,14 +565,14 @@
                 </div>
                 <div class="news-list-content row">
                     <div class="col-xs-12 col-sm-6 col-md-4 hot-news news-item">
-                        <a href="" class="thumbnail"><img src="hotnews/hot-news-1.jpg"></a>
+                        <a href="" class="thumbnail"><img src="thumbnail/hot-news-1.jpg"></a>
                         <a href="" class="title-news"><h1>Tin tức điện ảnh hot 1</h1></a>
                         <p class="max-lines">
                             Vòng Xoáy Lừa Đảo (The Swindlers) kể về câu chuyện truy tìm tên trùm lừa đảo Jang Doo Chil, kẻ vừa được báo tử cách đó không lâu. “Những kẻ liên quan” đến Doo Chil đánh hơi được tin tức này và nhanh chóng lên kế hoạch truy sát gã. Mỗi người, mỗi mục đích nhưng đã cùng gộp lại chung một đội để “hợp sức” truy sát kẻ thù. Hành trình tìm kiếm Doo Chil không phải dễ dàng, vừa phải lẫn tránh tai mắt của cảnh sát, vừa phải ráo riết lùng sục mọi thông tin dấu vết, đồng nghĩa với việc những kẻ dám tham gia trong phi vụ này đều không phải dạng vừa.
                         </p>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 hot-news news-item">
-                        <a href="" class="thumbnail"><img src="hotnews/hot-news-2.jpg"></a>
+                        <a href="" class="thumbnail"><img src="thumbnail/hot-news-2.jpg"></a>
                         <a href="" class="title-news"><h1>Tin tức điện ảnh hot 2</h1></a>
                         <p class="max-lines">
                             Mặc dù được giới thiệu phim theo thể loại Tâm lý tội phạm – hành động nhưng khán giả vẫn không khỏi hồi hộp và bất ngờ khi xem những cảnh quay được giới thiệu trong teaser trailer đầu tiên của phim. Điều đó lý giải vì sao teaser ngắn của Cạm Bẫy – Hơi Thở Của Quỷ đã đạt được gần 2 triệu lượt view trên fanpage chính thức của phim.
@@ -561,19 +580,19 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 news-right-list">
                         <div class="news-item">
-                            <a href="" class="small-thumbnail"><img src="hotnews/news-1.jpg"></a>
+                            <a href="" class="small-thumbnail"><img src="thumbnail/news-1.jpg"></a>
                             <a href="" class="title-news max-lines"><h1>Bộ phim 20 phút của thuyền trưởng 'Jack Sparrow' có gì hấp dẫn?</h1></a>
                         </div>
                         <div class="news-item">
-                            <a href="" class="small-thumbnail"><img src="hotnews/news-2.jpg"></a>
+                            <a href="" class="small-thumbnail"><img src="thumbnail/news-2.jpg"></a>
                             <a href="" class="title-news max-lines"><h1>Coco – Nguồn cảm hứng Mexico bất tận chảy tràn trong tác phẩm</h1></a>
                         </div>
                         <div class="news-item">
-                            <a href="" class="small-thumbnail"><img src="hotnews/news-3.jpg"></a>
+                            <a href="" class="small-thumbnail"><img src="thumbnail/news-3.jpg"></a>
                             <a href="" class="title-news max-lines"><h1>James Franco sẽ có phim siêu anh hùng của riêng mình</h1></a>
                         </div>
                         <div class="news-item">
-                            <a href="" class="small-thumbnail"><img src="hotnews/news-4.jpg"></a>
+                            <a href="" class="small-thumbnail"><img src="thumbnail/news-4.jpg"></a>
                             <a href="" class="title-news max-lines"><h1>Steppenwolf – Giận thì giận mà thương thì thương</h1></a>
                         </div>
                     </div>
@@ -606,6 +625,8 @@
 			    interval: false
 			});
 		});
+		
+
 	</script>
 	<script type="text/javascript" src="home.js"></script>
     <script src="masterpage.js"></script>
