@@ -4,13 +4,17 @@
 .body-content {
     background: url("img/little-pony.png") no-repeat;
     background-size: cover;
-    padding: 20px 70px;
+    padding: 50px 100px;
 }
 
 .view-port {
     color: #fff;
+    height: 90vh;
 }
 
+.col-md-10, .col-md-2{
+    padding: 0px;
+}
 
 .foot-view-port {
     position: relative;
@@ -299,7 +303,3 @@
         display:none;
     }
 }
-
-
-
-

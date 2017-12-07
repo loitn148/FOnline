@@ -2,8 +2,9 @@
     /*body-content*/
     .body-content {
         background: url("img/little-pony.png");
-        background-size: cover;
-        padding: 50px;
+        background-size: contain;
+        background-repeat-y: no-repeat; 
+        padding: 50px 100px;
         width: 100%;
     }
 
@@ -70,13 +71,13 @@
     }
 
         .describe .box {
-            background: rgba(255,255,255,0.3);
+            background: rgba(255,255,255,1);
             margin-right: 10px;
             padding: 5px 10px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 3px;
-            color: #fff;
+            color: #000;
         }
 
         .describe ul {
@@ -86,12 +87,14 @@
             font-weight: bold;
             color: #fff;
             float: left;
-            width: 50%;
+            width: 70%;
         }
 
             .describe ul li {
                 margin-right: 50px;
                 float: left;
+                font-size: 16px;
+                color: #eee;
             }
 
         .describe .imbd {
@@ -102,8 +105,8 @@
         }
     /*detail-film*/
     .detail-film {
-        font-size: 20px;
-        color: #fff;
+        font-size: 14px;
+        color: #eee;
         line-height: 30px;
     }
 
