@@ -247,13 +247,37 @@ select{
 	padding: 10px 10px;
 }
 .item .thumbnail {
+	border: 0px;
+	padding: 0px;
 	margin-bottom: 0px;
 	float: left;
 	width: 45%;
+	position: relative;
 }
-.item .thumbnail img{
+.item .thumbnail .avatar-film{
 	width: 100%;
 	height: 100px;
+}
+.item .thumbnail .background-linear{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+	background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+    background: linear-gradient(to top, #0a2029, transparent 100%);
+}
+.item .thumbnail .background-linear .icon{
+	height: 40%;
+	width: auto;
 }
 .item .film-info{
 	float: right;
@@ -492,7 +516,7 @@ select{
 		width: auto;
 		float: none;
 	}
-	.item .thumbnail img{
+	.item .thumbnail .avatar-film{
 		width: 100%;
 		height: 165px;
 	}
@@ -642,18 +666,16 @@ select{
 @media screen and (min-width: 992px){
 
 	.slide-info-film{
-		display: block;
-		visibility: hidden;
+		display: none;
 		position: absolute;
 		top: 50%;
-		margin-top: -150px;
-		left: 5%;
+		left: 10%;
+		transform: translate(0%, -50%);
 		width: 350px;
 		padding: 10px;
 		padding-right: 30px;
 		border-radius: 5px;
 		color: #fff;
-		background: transparent;
 	    background: -webkit-linear-gradient(to right, #000, transparent 100%);
 	    background: -o-linear-gradient(to right, #000, transparent 100%);
 	    background: -moz-linear-gradient(to right, #000, transparent 100%);
@@ -720,15 +742,13 @@ select{
 	}
 
 	.play-film{
+		display: none;
 		cursor: pointer;
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		margin-top: -40px;
-		margin-left: -40px;
+		transform: translate(-50%,-50%);
 		border-radius: 100%;
-		display: block;
-		visibility: hidden;
 	}
 	.play-film img{
 		height: 80px;
@@ -759,6 +779,19 @@ select{
 	}
 
 	/*Header-movies-list*/
+	.item .thumbnail .background-linear{
+	}
+	.item .thumbnail:hover .background-linear{
+		top: 0;
+		height: 100%;
+	}
+	.item .thumbnail .avatar-film:hover{
+		background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+        background: linear-gradient(to top, #0a2029, transparent 100%);
+	}
+
 	.news-list-header a:hover, .movies-list-header a:hover{
 		cursor: pointer;
 	}
