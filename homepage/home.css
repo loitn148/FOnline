@@ -785,12 +785,12 @@ select{
 		top: 0;
 		height: 100%;
 	}
-	.item .thumbnail .avatar-film:hover{
+	/*.item .thumbnail .avatar-film:hover{
 		background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
         background: -o-linear-gradient(to top, #0a2029, transparent 100%);
         background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
         background: linear-gradient(to top, #0a2029, transparent 100%);
-	}
+	}*/
 
 	.news-list-header a:hover, .movies-list-header a:hover{
 		cursor: pointer;
