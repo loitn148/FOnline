@@ -1,6 +1,17 @@
-.body-content button,.body-content h1,.body-content span{
+h1, h2, h3, h4, h5, h6{
+    font-family: Tahoma;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+p{
+    font-family: Calibri, sans-serif, Helvetica;
+}
+.body-content button,
+.body-content span{
     font-family:Calibri;
 }
+
+/*BODY*/
 .body-content {
     width: 100%;
     display: flex;
@@ -10,28 +21,51 @@
 
 .form {
     display: flex;
-    margin: 50px 0;
+    margin: 30px 0;
     flex-direction: column;
     justify-content: center;
-    background: #ebebeb;
-    padding: 10px 50px;
+    background: #eee;
+    padding: 10px 30px;
     border-radius: 3px;
-    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .form .ground{
     margin-top:10px;
-     display: flex;
+    display: flex;
     flex-direction: column;
+    position: relative;
 }
-.form .ground span{
-    position:relative;
+
+.form .crossbar{
+    display: block;
+    text-align: center;
     text-transform:uppercase;
 }
+.crossbar:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+}
+.crossbar span{
+    width: auto;
+    z-index: 1;
+    padding: 0px 5px;
+    position: relative;
+    background: #eee;
+    color: #777;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
     .form h1 {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         text-transform: uppercase;
-        margin-bottom:15px;
+        margin: 20px 0px;
     }
 
     .form button {
@@ -66,8 +100,13 @@
         background: #fb822b;
     }
 
-    .form span {
+    .form .exist-account {
         text-align:center;
-        font-weight:bold;
-        padding-bottom:20px;
+        font-weight:bold
+    }
+
+    .form .exist-account a{
+        font-family: Calibri;
+        text-align:center;
+        font-weight:bold
     }

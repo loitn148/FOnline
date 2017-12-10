@@ -1,0 +1,254 @@
+* {
+    font-family: Tahoma;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    padding: 0px;
+}
+
+.row {
+    margin: 0;
+}
+/*--TOPBAR--*/
+/*-------------------------------------*/
+.topbar, .r-topbar {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 1px 2px 3px #777;
+    z-index: 1;
+}
+
+.responsive {
+    display: none;
+}
+/*--logo--*/
+.logo {
+    text-align: center;
+    height: auto;
+    display: inline-block;
+}
+
+    .logo img {
+        width: 60px;
+        height: auto;
+    }
+
+/*--topbar-menu--*/
+.topbar-menu {
+    font-weight: 700;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 0px 20px;
+    position: relative;
+    display: inline-block;
+}
+
+    .menu-item a {
+        color: #080808;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .menu-item .open-sub {
+        padding-left: 20px;
+        display: none;
+    }
+
+    .menu-item a:hover {
+        color: #FF6347;
+    }
+
+    .menu-item .sub-menu {
+        display: none;
+        top: 20px;
+        left: 0;
+        padding-top: 30px;
+        width: 500%;
+        z-index:1000;
+    }
+
+.sub-menu .wrap-sub-menu {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 30px;
+    background:#fff;
+}
+
+.sub-menu a {
+    text-transform: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+    width: 100px;
+}
+
+.menu-item:hover > .sub-menu {
+    display:inherit;
+    flex-direction: row;
+    position: absolute;
+}
+
+
+/*--search-box--*/
+.search-box {
+    height: 40px;
+    width: 90%;
+    border-radius: 50px;
+    padding: 0px 10px;
+    color: #777;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+/*--account-icon--*/
+.account-icon {
+    margin: auto;
+    text-align: center;
+}
+
+    .account-icon a img {
+        width: 40px;
+        height: auto;
+        border-radius: 100%;
+    }
+/*foot*/
+.foot {
+    background: #757171;
+    padding: 30px 20px;
+    width: 100%;
+    display: flex;
+}
+
+    .foot .left-footer {
+        display: flex;
+        width: 60%;
+    }
+
+        .foot .left-footer .logo {
+            padding-right: 10px;
+        }
+
+    .foot .content-footer {
+        line-height: 14px;
+        margin-top: 5px;
+    }
+
+    .foot .big-text {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        margin-top: 5px;
+    }
+
+    .foot .nomar-text {
+        color: #fff;
+    }
+
+    .foot .right-footer {
+        padding-top: 30px;
+        width: 40%;
+        float: right;
+    }
+     .foot .right-footer a{
+         float:right;
+         padding:0 5px;
+     }
+    .foot .policy {
+        border-right: 1px solid #fff;
+        padding: 0 5px;
+    }
+@media screen and (max-width:992px){
+    .menu-item a{
+        font-size:14px;
+    }
+}
+@media screen and (max-width:900px) {
+    .topbar {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    .navi {
+        position: relative;
+    }
+
+        .navi .icon-menu img {
+            width: 50px;
+        }
+
+    .r-menu {
+        list-style: none;
+        width: 250px;
+        margin: 0 -15px;
+        padding: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #ccc;
+        display: none;
+        z-index:1000;
+    }
+
+        .r-menu li {
+            padding: 10px 20px;
+            border: 1px solid #eee;
+        }
+
+            .r-menu li a {
+                color: #000;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .r-menu li:active {
+                color: #fff;
+                background: #080808;
+            }
+
+                .r-menu li:active a {
+                    color: #fff;
+                }
+}
+
+@media screen and (max-width:720px) {
+    .foot{
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+    }
+    .foot .left-footer {
+        width: 100%;
+    }
+
+    .foot .right-footer {
+        display:none;
+    }
+}
