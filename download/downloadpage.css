@@ -1,10 +1,42 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: Tahoma;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+p{
+    font-family: Calibri, sans-serif, Helvetica;
+}
 
-.body-content
-{
-    background:url("img/little-pony.png") no-repeat;
-    background-size:cover;
-    padding:100px 0;
-    width:100%;
+.body-content {
+    background-color: #0a2029; 
+    padding: 50px 100px;
+    width: 100%;
+    position: relative;
+}
+
+.image-background-blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.image-background-blur img{
+    width: 100%;
+    filter: blur(8px);
+}
+
+.style-gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+    background: linear-gradient(to top, #0a2029, transparent 100%);
 }
 /*thum*/
 .thum{
@@ -14,22 +46,21 @@
 }
 /*detail*/
 .detail{
-    padding:20px 0;
+    /*padding:20px 0;*/
 }
 /*name*/
 .detail .name{
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 .detail .name .wold-name{
-    font-size:36px;
+    font-size: 35px;
     color:#ed7d31;
     font-weight:bold;
     text-transform:uppercase;
 }
 .detail .name .vn-name
 {
-    margin-top:-15px;
-    font-size:26px;
+    font-size:25px;
     color:#fff;
     font-weight:bold;
 }

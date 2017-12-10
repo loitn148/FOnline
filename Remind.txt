@@ -1,0 +1,18 @@
+﻿Thuận: 
+ - Tiêu đề listpage
+ - Menu dạng tablet, phone
+ - Thêm tên user + nền trong trang user
+ - Chỉnh padding trong phim liên quan trong page detail
+Lợi:
+ - Page Diễn viên + Tin tức
+ - Sửa page view, list
+ - Background
+ - Slideshow
+Khiêm:
+ - Prototype: dealine tối thứ 7 (9/12)
+ - Chủ nhật bắt đầu làm giao diện android
+Nguyệt:
+ - Push 2 page signin, signup
+ - Chuẩn bị báo cáo
+
+*****Deadline xong tất cả giao diện: 16/12/2017

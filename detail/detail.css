@@ -1,38 +1,112 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: Tahoma;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+p{
+    font-family: Calibri, sans-serif, Helvetica;
+}
+
 @media screen and (max-width: 2000px) {
     /*body-content*/
     .body-content {
-        background: url("img/little-pony.png");
-        background-size: cover;
-        padding: 50px;
+        background-color: #0a2029; 
+        padding: 50px 100px;
         width: 100%;
+        position: relative;
     }
 
+    .image-background-blur{
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .image-background-blur img{
+        width: 100%;
+        filter: blur(8px);
+    }
+
+    .style-gradient{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+        background: linear-gradient(to top, #0a2029, transparent 100%);
+    }
     .wrap {
         padding: 0;
         margin: 0;
+        position: relative;
     }
 
     .film-info {
         padding-bottom: 50px;
         float: left;
+        position: relative;
     }
         /*left*/
         .film-info .left {
             float: left;
             position: relative;
             width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
-            .film-info .left div .avatar-film {
+            .film-info .left .avatar-film {
                 width: 100%;
                 height: auto;
+                box-shadow: 1px 1px 3px #000;
+                border-radius: 2px;
             }
 
-            .film-info .left div .icon {
+            
+
+            .film-info .left .icon {
                 position: absolute;
-                left: 35%;
-                top: 35%;
-                width: 100px;
+                left: 50%; 
+                top: 50%;
+                transform: translate(-50%,-50%);
+                width: 80px;
+                border-radius: 100%;
+            }
+            .film-info .left .icon:active,
+            .film-info .left .icon:hover {
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .button-direct{
+                margin: 10px;
+            }
+            .button-direct button{
+                border: 0px;
+                border-radius: 2px;
+                width: 110px;
+                height: 40px;
+                font-family: Tahoma;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                margin: 0px 5px;
+            }
+            .button-direct .btn-trailer{
+                background-color: #4285f4;
+            }
+            .button-direct .btn-trailer:hover{
+                background-color: #5a95f5;
+            }
+            .button-direct .btn-download{
+                background-color: #00b050;
+            }
+            .button-direct .btn-download:hover{
+                background-color: #00ca5c;
             }
         /*right*/
         .film-info .right {
@@ -51,7 +125,7 @@
                     line-height: 1;
                     color: #ed7d31;
                     text-transform: uppercase;
-                    font-size: 40px;
+                    font-size: 35px;
                 }
 
                 .film-info .right .name h2 {
@@ -70,13 +144,13 @@
     }
 
         .describe .box {
-            background: rgba(255,255,255,0.3);
+            background: #fff;
             margin-right: 10px;
             padding: 5px 10px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 3px;
-            color: #fff;
+            color: #222;
         }
 
         .describe ul {
@@ -86,12 +160,14 @@
             font-weight: bold;
             color: #fff;
             float: left;
-            width: 50%;
+            width: 70%;
         }
 
             .describe ul li {
                 margin-right: 50px;
                 float: left;
+                font-size: 16px;
+                color: #eee;
             }
 
         .describe .imbd {
@@ -102,8 +178,8 @@
         }
     /*detail-film*/
     .detail-film {
-        font-size: 20px;
-        color: #fff;
+        font-size: 14px;
+        color: #eee;
         line-height: 30px;
     }
 
@@ -114,6 +190,7 @@
         border-radius: 3px;
         margin: 0;
         padding: 0;
+        position: relative;
     }
         /*title */
 
@@ -133,10 +210,21 @@
 
         .tag .tag-item {
             clear: both;
+            margin-top: 20px;
         }
+
+        .tag #tag-relative-film{
+            padding: 0px 25px;
+        }
+
+        .tag-item .col-md-3, .item .col-sm-6{
+            padding: 0px 5px;
+        }
+
+
             /*tag item comment*/
             .tag .tag-item .header-comment {
-                padding: 20px 0;
+                padding: 0px 0px 20px;
             }
 
                 .tag .tag-item .header-comment .avatar {
@@ -188,20 +276,80 @@
         border-left: 1px solid #4472c4;
     }
 
+    .item .thumbnail {
+        border: 0px;
+        padding: 0px;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
     .item .thumbnail img {
         width: 100%;
         height: 165px;
-        border-radius: 4px;
     }
 
-    .item .title-flim {
+    .item .thumbnail .background-linear{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+        background: linear-gradient(to top, #0a2029, transparent 100%);
+    }
+    .item .thumbnail .background-linear .icon{
+        height: 40%;
+        width: auto;
+    }
+
+    .item .thumbnail:hover .background-linear{
+        top: 0;
+        height: 100%;
+    }
+
+    .item .relate-film-info .title-film {
         font-size: 16px;
         font-weight: 700;
         color: #555;
         text-decoration: none;
     }
 
-        .item .title-flim:hover {
+        .item .relate-film-info .title-film h1{
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+        }
+        .item .relate-film-info .title-film h2{
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+        }
+
+        .item .relate-film-info p{
+            margin-top: 15px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .item .title-film h1:hover {
             color: #FF6347;
         }
 
@@ -230,12 +378,13 @@
             position: relative;
             width: 100%;
         }
-        .film-info .left div .icon {
-                position: absolute;
-                left: 45%;
-                top: 35%;
-                width: 100px;
-            }
+        .film-info .left .icon {
+            position: absolute;
+            left: 50%; 
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 100px;
+        }
         .film-info .right{
             width:100%;
             padding:10px 0;

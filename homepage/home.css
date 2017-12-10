@@ -219,7 +219,10 @@ select{
 	font-size: 16px;
     font-weight: 600;
     color: #fff;
+<<<<<<< HEAD
     padding-left: 20px;
+=======
+>>>>>>> 157d6552cf079c8e96121284013237ab39f02eff
 }
 .news-list-header a:hover, .movies-list-header a:hover{
 	cursor: pointer;
@@ -231,6 +234,7 @@ select{
 }
 .carousel-control {
 	display: none;
+<<<<<<< HEAD
 }
 .carousel-inner .item{
 	/*clear: both;
@@ -291,6 +295,92 @@ select{
 	font-size: 13px;
     color: #888;
 }
+=======
+}
+.carousel-inner .item{
+	/*clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+.carousel-inner .item .film-item:nth-child(even) {
+	background: #fff;
+}
+.carousel-inner .item .film-item:nth-child(odd) {
+	background: #eee;
+}
+.item .col-xs-12, .news-list-content .col-xs-12{
+	padding: 10px 10px;
+}
+.item .thumbnail {
+	border: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+	float: left;
+	width: 45%;
+	position: relative;
+}
+.item .thumbnail .avatar-film{
+	width: 100%;
+	height: 100px;
+}
+.item .thumbnail .background-linear{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: .5s ease;
+	background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+    background: linear-gradient(to top, #0a2029, transparent 100%);
+}
+.item .thumbnail .background-linear .icon{
+	height: 40%;
+	width: auto;
+}
+.item .film-info{
+	float: right;
+	width: 55%;
+	padding-left: 20px;
+}
+.item .title-film, 
+.news-item .title-news{
+	text-decoration: none;
+}
+.item .film-info .title-film h1,
+.news-item .title-news h1{
+   	-webkit-line-clamp: 2;
+   	display: -webkit-box;
+   	-webkit-box-orient: vertical;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+	font-size: 15px;
+	font-weight: 600;
+    color: #000;
+}
+.item .film-info .title-film h2{
+	-webkit-line-clamp: 1;
+   	display: -webkit-box;
+   	-webkit-box-orient: vertical;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+	font-size: 14px;
+	font-weight: 500;
+    color: #000;
+}
+.item .film-info p{
+	margin-top: 15px;
+	font-size: 13px;
+    color: #888;
+}
+>>>>>>> 157d6552cf079c8e96121284013237ab39f02eff
 
 .item .film-item{
 }
@@ -493,7 +583,11 @@ select{
 		width: auto;
 		float: none;
 	}
+<<<<<<< HEAD
 	.item .thumbnail img{
+=======
+	.item .thumbnail .avatar-film{
+>>>>>>> 157d6552cf079c8e96121284013237ab39f02eff
 		width: 100%;
 		height: 165px;
 	}
@@ -643,18 +737,29 @@ select{
 @media screen and (min-width: 992px){
 
 	.slide-info-film{
+<<<<<<< HEAD
 		display: block;
 		visibility: hidden;
 		position: absolute;
 		top: 50%;
 		margin-top: -150px;
 		left: 5%;
+=======
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 10%;
+		transform: translate(0%, -50%);
+>>>>>>> 157d6552cf079c8e96121284013237ab39f02eff
 		width: 350px;
 		padding: 10px;
 		padding-right: 30px;
 		border-radius: 5px;
 		color: #fff;
+<<<<<<< HEAD
 		background: transparent;
+=======
+>>>>>>> 157d6552cf079c8e96121284013237ab39f02eff
 	    background: -webkit-linear-gradient(to right, #000, transparent 100%);
 	    background: -o-linear-gradient(to right, #000, transparent 100%);
 	    background: -moz-linear-gradient(to right, #000, transparent 100%);
@@ -664,6 +769,7 @@ select{
 		font-size: 20px;
 		text-transform: uppercase;
 		font-weight: 600;
+<<<<<<< HEAD
 	}
 	.slide-info-film h2{
 		font-size: 17px;
@@ -763,6 +869,118 @@ select{
 	.news-list-header a:hover, .movies-list-header a:hover{
 		cursor: pointer;
 	}
+=======
+	}
+	.slide-info-film h2{
+		font-size: 17px;
+		margin-bottom: 20px;
+	}
+	.slide-info-film .box{
+		padding: 1px 5px;
+		background-color: #fff;
+		color: #000;
+		font-weight: 600;
+		border-radius: 2px;
+	}
+	.slide-info-film ul{
+		list-style: square;
+		padding: 5px 0px;
+		clear: both;
+	}
+	.slide-info-film ul li{
+		float: left;
+	  	margin-right: 30px;
+	  	margin-top: 7px;
+	}
+	.slide-info-film ul li:first-child{
+		list-style-type: none;
+	}
+	.slide-info-film p{
+	   	-webkit-line-clamp: 4;
+	   	display: -webkit-box;
+	   	-webkit-box-orient: vertical;
+	   	text-overflow: ellipsis;
+	   	overflow: hidden;
+	   	line-height: 1.5em;
+	   	color: #ddd;
+	}
+	.prev-slide, .next-slide {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		margin-top: -35px;
+		width: auto;
+		padding: 0px 10px;
+		color: #fff;
+		font-weight: 100;
+		font-size: 70px;
+		display: block;
+		opacity: 0.7;
+	}
+	.prev-slide:hover, .next-slide:hover {
+		opacity: 1;
+		color: #fff;
+		text-decoration: none;
+	}
+	.next-slide{
+		right: 0;
+	}
+
+	.play-film{
+		display: none;
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		border-radius: 100%;
+	}
+	.play-film img{
+		height: 80px;
+		width: auto;
+	}
+	.play-film:hover{
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.background-slide{
+		display: block;
+	}
+	.filter{
+		display: block;
+	}
+	.dot{
+		display: inline-block;
+	}
+
+	/*--BODY - LIST PHIM--*/
+	/*-------------------------------------*/
+	#body-content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 50px 50px 0px;
+	}
+
+	/*Header-movies-list*/
+	.item .thumbnail .background-linear{
+	}
+	.item .thumbnail:hover .background-linear{
+		top: 0;
+		height: 100%;
+	}
+	/*.item .thumbnail .avatar-film:hover{
+		background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+        background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+        background: linear-gradient(to top, #0a2029, transparent 100%);
+	}*/
+
+	.news-list-header a:hover, .movies-list-header a:hover{
+		cursor: pointer;
+	}
+>>>>>>> 157d6552cf079c8e96121284013237ab39f02eff
 
 	/*Content-movies-list*/
 	.item .title-film h1:hover, .news-item .title-news h1:hover{

@@ -2,15 +2,43 @@
 @media screen and (max-width: 4096px){
     
 .body-content {
-    background: url("img/little-pony.png") no-repeat;
-    background-size: cover;
-    padding: 20px 70px;
+    background-color: #0a2029; 
+    padding: 30px 100px 50px;
+    width: 100%;
+    position: relative;
+}
+
+.image-background-blur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.image-background-blur img{
+    width: 100%;
+    filter: blur(8px);
+}
+
+.style-gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+    background: linear-gradient(to top, #0a2029, transparent 100%);
 }
 
 .view-port {
     color: #fff;
 }
 
+.col-md-10, .col-md-2{
+    padding: 0px;
+}
 
 .foot-view-port {
     position: relative;
@@ -299,7 +327,3 @@
         display:none;
     }
 }
-
-
-
-
