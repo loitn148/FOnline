@@ -1,0 +1,73 @@
+.body-content button,.body-content h1,.body-content span{
+    font-family:Calibri;
+}
+.body-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    margin: 50px 0;
+    flex-direction: column;
+    justify-content: center;
+    background: #ebebeb;
+    padding: 10px 50px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.form .ground{
+    margin-top:10px;
+     display: flex;
+    flex-direction: column;
+}
+.form .ground span{
+    position:relative;
+    text-transform:uppercase;
+}
+    .form h1 {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom:15px;
+    }
+
+    .form button {
+        font-size: 14px;
+        color: #fff;
+        padding: 10px 25px;
+        margin-bottom: 15px;
+        outline: none;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .form .btn-facebook {
+        background: #3b5999;
+    }
+
+    .form .btn-google {
+        background: #dd4c39;
+    }
+
+    .form input {
+        height: 40px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .form .btn-signup {
+        background: #fb822b;
+    }
+
+    .form span {
+        text-align:center;
+        font-weight:bold;
+        padding-bottom:20px;
+    }

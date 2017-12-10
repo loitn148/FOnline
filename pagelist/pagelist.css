@@ -1,4 +1,8 @@
-﻿
+﻿h1, h2, h3, h4, h5, h6{
+	font-family: Tahoma;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
 @media screen and (max-width:4096px){
     /*--FILTER--*/
 /*-------------------------------------*/
@@ -46,14 +50,32 @@ select{
 .slideshow-img{
 	position: relative;
 	margin: auto;
+    
 }
 .slideshow-img img{
     width:100%;
     height:265px;
 }
+.slideshow .title-slide{
+    width:30%;
+    padding:20px 0;
+    text-align:center;
+    color:#fff;
+    font-weight:bold;
+    font-size:24px;
+    text-transform:uppercase;
+    position:absolute;
+    top:30%;
+    left:35%;
+    background:#FF6347;/* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left,rgba(255, 99, 71,0),rgba(255, 99, 71,1),rgba(255, 99, 71,0)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(right,rgba(255, 99, 71,0),rgba(255, 99, 71,1),rgba(255, 99, 71,0)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(right,rgba(255, 99, 71,0),rgba(255, 99, 71,1),rgba(255, 99, 71,0)); /*Fx 3.6-15*/
+    background: linear-gradient(to right,rgba(255, 99, 71,0),rgba(255, 99, 71,1),rgba(255, 99, 71,0)); /*Standard*/
+}
 /*body*/ 
 .body-content{
-	margin: 70px 50px;
+	margin: 70px 100px;
 	justify-content: center;
 	align-items: center;
 }
@@ -64,11 +86,69 @@ select{
 .body-content .item{
     margin-top:15px;
 }
-.thumbnail
-{
-    margin-bottom:10px;
+
+.item .col-xs-12, .news-list-content .col-xs-12{
+	padding: 10px 5px;
 }
-.item img{
+.item .thumbnail {
+	margin-bottom: 10px;
+}
+.item .thumbnail img{
+	width: 100%;
+	height: 165px;
+}
+.item .title-film, 
+.news-item .title-news{
+	text-decoration: none;
+}
+.item .film-info .title-film h1{
+   	-webkit-line-clamp: 2;
+   	display: -webkit-box;
+   	-webkit-box-orient: vertical;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+	font-size: 15px;
+	font-weight: 600;
+    color: #000;
+}
+.item .film-info .title-film h1:hover{
+    color:#FF6347;
+}
+.item .film-info .title-film h2{
+	-webkit-line-clamp: 1;
+   	display: -webkit-box;
+   	-webkit-box-orient: vertical;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+	font-size: 14px;
+	font-weight: 500;
+    color: #000;
+}
+.item .film-info p{
+	margin-top: 15px;
+	font-size: 13px;
+    color: #888;
+}
+
+.item .film-item{
+}
+.item .film-item .more-info{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background-color: red;
+	color: #fff;
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-weight: 600;
+	font-size: 13px;
+	border-radius: 100%;
+	opacity: 0.9;
+}
+/*.item img{
     width:100%;
     height:165px;
 }
@@ -80,7 +160,7 @@ select{
 }
 .item .title-flim:hover{
 	color: #FF6347;
-}
+}*/
 /*page list*/
 .page-list{
     display:flex;
