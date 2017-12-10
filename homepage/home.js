@@ -37,8 +37,6 @@ function currentSlide(n) {
 	show = setInterval(showSlides, 5000);
 }
 
-
-<<<<<<< HEAD
 function onMouseOver(){
 	document.getElementsByClassName('slide-info-film')[0].style.visibility = "visible";
 	document.getElementsByClassName('slide-info-film')[0].style.transition = "all 2s";
@@ -53,7 +51,6 @@ function onMouseOut(){
 	show = setInterval(showSlides, 5000);
 }
 
-=======
 $(function(){
 	$('.slideshow').hover(function(){
 		$('.slide-info-film').fadeIn('100');
@@ -66,7 +63,6 @@ $(function(){
 		show = setInterval(showSlides, 5000);
 	})
 });
->>>>>>> 157d6552cf079c8e96121284013237ab39f02eff
 
 (function(){  $('.carousel-showmanymoveone .item ').each(function(){    
 

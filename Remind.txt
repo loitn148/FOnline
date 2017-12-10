@@ -2,7 +2,6 @@
  - Tiêu đề listpage
  - Menu dạng tablet, phone
  - Thêm tên user + nền trong trang user
- - Chỉnh padding trong phim liên quan trong page detail
 Lợi:
  - Page Diễn viên + Tin tức
  - Sửa page view, list
