@@ -181,57 +181,118 @@ header {
         border-right: 1px solid #fff;
         padding: 0 5px;
     }
-
-@media screen and (max-width:900px) {
+@media screen and (max-width:992px) {
     .topbar {
         display: none;
     }
 
     .responsive {
-        display: block;
+        display:flex;
+        padding:10px 5px;
+        border-bottom:1px solid #ccc;
+        box-shadow: 1px 2px 3px #777;
+        z-index:100;
     }
-
-    .navi {
-        position: relative;
+    .responsive .r-logo
+    {
+        width:80%;
+         display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
     }
-
-        .navi .icon-menu img {
-            width: 50px;
+   .responsive .r-logo h1{
+        font-size:25px;
+        margin:0;
+        padding:0;
+        margin-left:15px;
+    }
+   .responsive .r-logo img{
+       width:40px;
+    }
+    .responsive .r-search{
+        width:10%;
+       
+    }
+    .responsive .r-search input{
+        height:40px;
+        width:40px;
+        border-radius:50px;
+        padding:10px;
+        background-image:url('../images/look.png');
+        background-size:cover;
+    }
+    .responsive .r-search-box{
+        position:absolute;
+        top:62px;
+        left:0;
+        padding:10px 20px;
+        width:100%;
+        background:rgba(0, 0, 0, 0.2);
+        display:none;
+	z-index:50;
+    }
+        .responsive .r-search-box input {
+            width:100%;
+            border-radius:20px;
+            height:30px;
+            padding-left:10px;
         }
-
-    .r-menu {
-        list-style: none;
-        width: 250px;
-        margin: 0 -15px;
-        padding: 0;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: #ccc;
-        display: none;
-	z-index:1000;
+   .responsive .r-nav{
+        width:10%;
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+   }
+   .responsive .r-nav img{
+       width:40px;
+   }
+    .responsive .r-nav .r-menu{
+       position:absolute;
+       left:0;
+       top:60px;
+       background:rgba(0,0,0,0.8);
+       width:100%;
+       height:100vh;
+        display:none;
+        z-index:100;
     }
-
-        .r-menu li {
-            padding: 10px 20px;
-            border: 1px solid #eee;
-        }
-
-            .r-menu li a {
-                color: #000;
-                text-decoration: none;
-                font-size: 24px;
-                font-weight: bold;
-            }
-
-            .r-menu li:active {
-                color: #fff;
-                background: #080808;
-            }
-
-                .r-menu li:active a {
-                    color: #fff;
-                }
+   .r-nav .parent-menu{
+       border:1px solid #ccc;
+       width:40%;
+       height:100vh;
+       background:#fff;
+       z-index:100;
+   }
+   .r-nav .parent-menu .r-item{
+       padding:10px 30px;
+   }
+   .r-nav .parent-menu .r-item .icon-menu
+   {
+       width:16px;
+       height:16px;
+       margin-top:-5px;
+       margin-right:10px;
+   }
+   .r-nav .parent-menu .r-item>a{
+       color:#000;
+       font-size:18px;
+   }
+   .r-nav .parent-menu .child-menu{
+       display:flex;
+       flex-direction:column;
+       display:none;
+   }
+   .r-nav .parent-menu .child-menu a{
+       display:flex;
+       flex-direction:column;
+       margin-top:10px;
+       margin-left:20px;
+       font-size:16px;
+       color:#000;
+       
+   }
 }
 
 @media screen and (max-width:720px) {
