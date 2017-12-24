@@ -37,20 +37,6 @@ function currentSlide(n) {
 	show = setInterval(showSlides, 5000);
 }
 
-function onMouseOver(){
-	document.getElementsByClassName('slide-info-film')[0].style.visibility = "visible";
-	document.getElementsByClassName('slide-info-film')[0].style.transition = "all 2s";
-	document.querySelector('.slide-info-film p').style.maxHeight = "6em";
-	document.getElementsByClassName('play-film')[0].style.visibility = "visible";
-	clearInterval(show);
-		
-}
-function onMouseOut(){
-	document.getElementsByClassName('slide-info-film')[0].style.visibility = "hidden";
-	document.getElementsByClassName('play-film')[0].style.visibility = "hidden";
-	show = setInterval(showSlides, 5000);
-}
-
 $(function(){
 	$('.slideshow').hover(function(){
 		$('.slide-info-film').fadeIn('100');

@@ -216,11 +216,33 @@ p{
         .tag #tag-relative-film{
             padding: 0px 25px;
         }
-
+        .tag #tag-character{
+            padding: 0px 25px;
+        }
         .tag-item .col-md-3, .item .col-sm-6{
             padding: 0px 5px;
         }
-
+        /*item character*/
+        .item .detail {
+            text-decoration:none;
+        }
+        .item .detail:hover>h1 {
+            color:#ed7d31;
+        }
+        .item .detail h1{
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+        }
+        .item .detail p{
+            margin-top: 5px;
+            font-size: 14px;
+            color: #888;
+        }
 
             /*tag item comment*/
             .tag .tag-item .header-comment {
@@ -358,6 +380,9 @@ p{
     }
 
     #tag-relative-film {
+        display: none;
+    }
+    #tag-character{
         display: none;
     }
 }

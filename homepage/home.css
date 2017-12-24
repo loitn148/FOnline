@@ -246,7 +246,8 @@ select{
 .item .col-xs-12, .news-list-content .col-xs-12{
 	padding: 10px 10px;
 }
-.item .thumbnail {
+.item .thumbnail,
+.news-item .thumbnail {
 	border: 0px;
 	padding: 0px;
 	margin-bottom: 0px;
@@ -279,7 +280,8 @@ select{
 	height: 40%;
 	width: auto;
 }
-.item .film-info{
+.item .film-info,
+.news-item .news-info{
 	float: right;
 	width: 55%;
 	padding-left: 20px;
@@ -511,7 +513,8 @@ select{
 	.item .col-md-3, .item .col-sm-6{
 		padding: 0px 5px;
 	}
-	.item .thumbnail {
+	.item .thumbnail,
+	.news-item .thumbnail {
 		margin-bottom: 15px;
 		width: auto;
 		float: none;
@@ -520,7 +523,8 @@ select{
 		width: 100%;
 		height: 165px;
 	}
-	.item .film-info{
+	.item .film-info,
+	.news-item .news-info{
 		float: none;
 		width: auto;
 		padding-left: 0px;

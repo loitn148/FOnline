@@ -92,10 +92,44 @@ select{
 }
 .item .thumbnail {
 	margin-bottom: 10px;
+    border: 0px;
+    padding: 0px;
+    position: relative;
 }
 .item .thumbnail img{
 	width: 100%;
 	height: 165px;
+}
+.item .thumbnail .background-linear{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+    background: linear-gradient(to top, #0a2029, transparent 100%);
+}
+.item .thumbnail .background-linear .icon{
+    height: 40%;
+    width: auto;
+}
+.item .thumbnail:hover .background-linear{
+    top: 0;
+    height: 100%;
+}
+.item .thumbnail img:hover{
+    background: -webkit-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -o-linear-gradient(to top, #0a2029, transparent 100%);
+    background: -moz-linear-gradient(to top, #0a2029, transparent 100%);
+    background: linear-gradient(to top, #0a2029, transparent 100%);
 }
 .item .title-film, 
 .news-item .title-news{
@@ -165,35 +199,33 @@ select{
 .page-list{
     display:flex;
     justify-content:center;
-    margin-top:10px;
-    margin-bottom:20px;
+    margin-bottom: 50px;
 }
-.page-list .button{
-    border:1px solid #ccc;
-    color:#555;
-    font-weight:700;
-    font-size:16px;
-    text-decoration:none;
-    padding:5px 10px;
-    margin:0 5px;
-}
+.page-list .button, 
 .page-list .button-number{
-    border:1px solid #ccc;
-    color:#555;
-    font-weight:700;
-    font-size:16px;
+    border: 1px solid #777;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 7px 15px;
+    color: #888;
+    outline: none;
     text-decoration:none;
-    padding:5px 10px;
     margin:0 5px;
 }
     .page-list .button:hover {
-        background:#fb964f;
+        background-color: #f0723b;
+        color: #fff;
+        border: 1px solid #f0723b;
     }
-     .page-list .button-number:hover {
-        background:#fb964f;
+    .page-list .button-number:hover {
+        background-color: #f0723b;
+        color: #fff;
+        border: 1px solid #f0723b;
     }
      .page-list .active{
-        background:#fb964f;
+        background-color: #ee6123;
+        color: #fff;
+        border: 1px solid #ee6123;
     }
 }
 @media screen and (max-width:768px)
