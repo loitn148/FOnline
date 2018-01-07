@@ -189,6 +189,8 @@ header {
     .responsive {
         display:flex;
         padding:10px 5px;
+        justify-content: center;
+        align-items: center;
         border-bottom:1px solid #ccc;
         box-shadow: 1px 2px 3px #777;
         z-index:100;
@@ -196,8 +198,14 @@ header {
     .responsive .r-logo
     {
         width:80%;
-         display:flex;
+        display:flex;
         flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    .responsive .r-logo a
+    {
+        display:flex;
         justify-content:center;
         align-items:center;
     }
@@ -208,7 +216,7 @@ header {
         margin-left:15px;
     }
    .responsive .r-logo img{
-       width:40px;
+       width: 60%;
     }
     .responsive .r-search{
         width:10%;

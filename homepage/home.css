@@ -88,72 +88,118 @@ header{
 
 /*--SLIDESHOW--*/
 	/*-------------------------------------*/
+
+/* jssor slider loading skin spin css */
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.jssorb053 .i {position:absolute;cursor:pointer;}
+.jssorb053 .i .b {fill:#fff;fill-opacity:0.5;}
+.jssorb053 .i:hover .b {fill-opacity:.7;}
+.jssorb053 .iav .b {fill-opacity: 1;}
+.jssorb053 .i.idn {opacity:.3;}
+
+.jssora093 {display:block;position:absolute;cursor:pointer;}
+.jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+.jssora093:hover {opacity:.8;}
+.jssora093.jssora093dn {opacity:.6;}
+.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+
 .slideshow{
 	height: 90%;
 	position: relative;
 }
-.slideshow-img{
-	position: relative;
-	margin: auto;
-	z-index: -1;
+.jssorb053{
+	bottom: 12px;
 }
-.slide-item{
+.play-film{
 	display: none;
-}
-.slide-item img{
-	width: 100%;
-	height: 100%;
-}
-.background-slide{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background: transparent;
-    background: -webkit-linear-gradient(to top, #000, transparent 20%);
-    background: -o-linear-gradient(to top, #000, transparent 20%);
-    background: -moz-linear-gradient(to top, #000, transparent 20%);
-	background: linear-gradient(to top, #000, transparent 20%);
-    top: 0;
-    display: none;
-}
-.prev-slide, .next-slide, .play-film{
-	display: none;
-}
-.dot-swap{
-	position: absolute;
-	bottom: 10%;
-	left: 50%;
-	margin-left: -40px;
-}
-.dot{
 	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	transition: background-color 0.6s ease;
-	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 100%;
 }
-.dot.active, .dot:hover{
-	background-color: #ee6123;
+.play-film img{
+	height: 80px;
+	width: auto;
 }
-.anim{
-	-webkit-animation-name: anim;
-	-webkit-animation-duration: 2s;
-	animation-name: anim;
-	animation-duration: 2s;
-}
-@-webkit-keyframes anim{
-	from {opacity: .7;}
-    to {opacity: 1;}
-}
-@keyframes anim{
-	/*from {opacity: .7;}
-    to {opacity: 1;}*/
+.play-film:hover{
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .slide-info-film{
 	display: none;
+}
+.slide-info-film{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(0%, -50%);
+	width: 350px;
+	padding: 10px;
+	padding-right: 30px;
+	border-radius: 5px;
+	color: #fff;
+    background: -webkit-linear-gradient(to right, #000, transparent 100%);
+    background: -o-linear-gradient(to right, #000, transparent 100%);
+    background: -moz-linear-gradient(to right, #000, transparent 100%);
+	background: linear-gradient(to right, #000, transparent 100%);
+}
+.slide-info-film h1{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.slide-info-film h2{
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+.slide-info-film .box{
+	padding: 1px 5px;
+	background-color: #fff;
+	color: #000;
+	font-weight: 600;
+	border-radius: 2px;
+}
+.slide-info-film ul{
+	list-style: square;
+	padding: 5px 0px;
+	clear: both;
+}
+.slide-info-film ul li{
+	float: left;
+  	margin-right: 30px;
+  	margin-top: 7px;
+}
+.slide-info-film ul li:first-child{
+	list-style-type: none;
+}
+.slide-info-film p{
+   	-webkit-line-clamp: 4;
+   	display: -webkit-box;
+   	-webkit-box-orient: vertical;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+   	line-height: 1.5em;
+   	color: #ddd;
 }
 
 /*--FILTER--*/
@@ -668,112 +714,16 @@ select{
 }
 
 @media screen and (min-width: 992px){
-
-	.slide-info-film{
-		display: none;
-		position: absolute;
-		top: 50%;
-		left: 10%;
-		transform: translate(0%, -50%);
-		width: 350px;
-		padding: 10px;
-		padding-right: 30px;
-		border-radius: 5px;
-		color: #fff;
-	    background: -webkit-linear-gradient(to right, #000, transparent 100%);
-	    background: -o-linear-gradient(to right, #000, transparent 100%);
-	    background: -moz-linear-gradient(to right, #000, transparent 100%);
-		background: linear-gradient(to right, #000, transparent 100%);
-	}
-	.slide-info-film h1{
-		font-size: 20px;
-		text-transform: uppercase;
-		font-weight: 600;
-	}
-	.slide-info-film h2{
-		font-size: 17px;
-		margin-bottom: 20px;
-	}
-	.slide-info-film .box{
-		padding: 1px 5px;
-		background-color: #fff;
-		color: #000;
-		font-weight: 600;
-		border-radius: 2px;
-	}
-	.slide-info-film ul{
-		list-style: square;
-		padding: 5px 0px;
-		clear: both;
-	}
-	.slide-info-film ul li{
-		float: left;
-	  	margin-right: 30px;
-	  	margin-top: 7px;
-	}
-	.slide-info-film ul li:first-child{
-		list-style-type: none;
-	}
-	.slide-info-film p{
-	   	-webkit-line-clamp: 4;
-	   	display: -webkit-box;
-	   	-webkit-box-orient: vertical;
-	   	text-overflow: ellipsis;
-	   	overflow: hidden;
-	   	line-height: 1.5em;
-	   	color: #ddd;
-	}
-	.prev-slide, .next-slide {
-		cursor: pointer;
-		position: absolute;
-		top: 50%;
-		margin-top: -35px;
-		width: auto;
-		padding: 0px 10px;
-		color: #fff;
-		font-weight: 100;
-		font-size: 70px;
-		display: block;
-		opacity: 0.7;
-	}
-	.prev-slide:hover, .next-slide:hover {
-		opacity: 1;
-		color: #fff;
-		text-decoration: none;
-	}
-	.next-slide{
-		right: 0;
-	}
-
-	.play-film{
-		display: none;
-		cursor: pointer;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%,-50%);
-		border-radius: 100%;
-	}
-	.play-film img{
-		height: 80px;
-		width: auto;
-	}
-	.play-film:hover{
-		background-color: rgba(0, 0, 0, 0.3);
-	}
-
-	.background-slide{
-		display: block;
-	}
 	.filter{
 		display: block;
 	}
-	.dot{
-		display: inline-block;
+	.jssorb053{
+		bottom: 50px;
 	}
 
 	/*--BODY - LIST PHIM--*/
 	/*-------------------------------------*/
+
 	#body-content{
 		display: flex;
 		justify-content: center;

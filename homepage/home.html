@@ -6,16 +6,76 @@
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="masterpage.css">
+    <script src="../js/jquery-1.11.3.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/jssor.slider-26.7.0.min.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<title>FOnline - Xem phim HD thả ga</title>
 </head>
 <body>
+    <!-- Script slideshow -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:500,$Delay:12,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2049,$Easing:$Jease$.$OutQuad},
+              {$Duration:500,$Delay:40,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$SlideOut:true,$Easing:$Jease$.$OutQuad},
+              {$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.2,0.8],$Top:[0.2,0.8]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Round:{$Left:0.8,$Top:2.5}},
+              {$Duration:1500,x:0.3,y:-0.3,$Delay:20,$Cols:10,$Rows:5,$Opacity:2,$Clip:15,$During:{$Left:[0.1,0.9],$Top:[0.1,0.9]},$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Round:{$Left:0.8,$Top:2.5}},
+              {$Duration:400,$Delay:40,$Cols:16,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Opacity:2,$Assembly:260}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Cols: 1,
+              $Align: 0,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 3000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        });
+    </script>
     <div class="container">
         <header>
             <div class="topbar row">
                 <div class="logo col-md-1 col-xs-2 col-sm-1">
-                    <a href="../homepage/home.html"><img src="../images/icon/logo.png"></a>
+                    <a href="../homepage/home.html"><img src="../images/icon/logo-web.png"></a>
                 </div>
                 <div class="topbar-menu col-md-7 col-xs-2 col-sm-8">
                     <div class="menu">
@@ -93,8 +153,7 @@
                     </div>
                 </div>
                 <div class="r-logo">
-                    <a href="../homepage/home.html"><img src="../images/icon/logo.png"></a>
-                    <h1>FOnline.com</h1>
+                    <a href="../homepage/home.html"><img src="../images/icon/logo-mobile.png"></a>
                 </div>
                 <div class="r-search">
                     <input type="button" id="btn_search" />
@@ -105,7 +164,7 @@
 
             </div>
             <div class="slideshow row">
-                <div class="slideshow-img">
+                <!-- <div class="slideshow-img">
                 	<div class="slide-item anim">
                         <img src="../images/slide/blade-runner.jpg">
                         <div class="background-slide"></div>
@@ -125,12 +184,57 @@
                 </div>
                 <a class="prev-slide" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next-slide" onclick="plusSlides(+1)">&#10095;</a>
-                <a class="play-film" href=""><img src="../images/icon/play-video.png"></a>
                 <div class="dot-swap">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
                     <span class="dot" onclick="currentSlide(4)"></span>
+                </div> -->
+                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+                <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="spin.svg" />
+                    </div>
+                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+                        <div data-p="170.00">
+                            <img data-u="image" src="../images/slide/blade-runner.jpg" />
+                        </div>
+                        <div data-p="170.00">
+                            <img data-u="image" src="../images/slide/little-pony.jpg" />
+                        </div>
+                        <div data-p="170.00">
+                            <img data-u="image" src="../images/slide/sinh-nhat-chet-choc.jpg" />
+                        </div>
+                        <div data-p="170.00">
+                            <img data-u="image" src="../images/slide/trong-tung-nhip-tho.jpg" />
+                        </div>
+                    </div>
+                <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb053" style="position:absolute;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <path class="b" d="M11400,13800H4600c-1320,0-2400-1080-2400-2400V4600c0-1320,1080-2400,2400-2400h6800 c1320,0,2400,1080,2400,2400v6800C13800,12720,12720,13800,11400,13800z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora093" style="width:50px;height:50px;top:0px;left:30px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+                            <polyline class="a" points="7777.8,6080 5857.8,8000 7777.8,9920 "></polyline>
+                            <line class="a" x1="10142.2" y1="8000" x2="5857.8" y2="8000"></line>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora093" style="width:50px;height:50px;top:0px;right:30px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <circle class="c" cx="8000" cy="8000" r="5920"></circle>
+                            <polyline class="a" points="8222.2,6080 10142.2,8000 8222.2,9920 "></polyline>
+                            <line class="a" x1="5857.8" y1="8000" x2="10142.2" y2="8000"></line>
+                        </svg>
+                    </div>
+                </div>
+                <div class="play-film">
+                    <a href=""><img src="../images/icon/play-video.png"></a>
                 </div>
                 <div class="slide-info-film">
                 	<h1>Tên phim của nhà sản xuất</h1>
@@ -154,6 +258,7 @@
                         xâm lấn các hành tinh khác. 
                     </p>
                 </div>
+
                 <div class="filter">
                     <div class="filter-content">
                         <!--Loại phim: lẻ, bộ, chiếu rạp-->
@@ -203,8 +308,8 @@
                 </div>
             </div>
         </header>
-        <div id="body-content">
 
+        <div id="body-content">
 			<!--DANH SÁCH PHIM MỚI-->
 			<div class="movies-list new-film">
 				<div class="movies-list-header">
@@ -740,7 +845,7 @@
             <div class="foot">
                 <div class="left-footer">
                     <div class="logo">
-                        <img src="../images/icon/logo.png">
+                        <img src="../images/icon/logo-web.png">
                     </div>
                     <div class="content-footer">
                         <p class="big-text">Xem phim hd thả ga </p>

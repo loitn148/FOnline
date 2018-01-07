@@ -7,7 +7,7 @@ p{
     font-family: Calibri, sans-serif, Helvetica;
 }
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 3000px) {
     /*body-content*/
     .body-content {
         background-color: #0a2029; 
@@ -98,12 +98,14 @@ p{
             }
             .button-direct .btn-trailer{
                 background-color: #4285f4;
+                outline: none;
             }
             .button-direct .btn-trailer:hover{
                 background-color: #5a95f5;
             }
             .button-direct .btn-download{
                 background-color: #00b050;
+                outline: none;
             }
             .button-direct .btn-download:hover{
                 background-color: #00ca5c;
@@ -388,9 +390,19 @@ p{
 }
 
 @media screen and (max-width: 768px) {
+    .body-content {
+        background-color: #0a2029; 
+        padding: 50px 50px;
+        width: 100%;
+        position: relative;
+    }
      .wrap {
         padding: 0;
         margin: 0;
+    }
+
+    .film-info .right .name h1 {
+        font-size: 30px;
     }
 
     .film-info {
