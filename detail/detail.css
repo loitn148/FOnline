@@ -67,8 +67,6 @@ p{
                 border-radius: 2px;
             }
 
-            
-
             .film-info .left .icon {
                 position: absolute;
                 left: 50%; 
@@ -77,9 +75,135 @@ p{
                 width: 80px;
                 border-radius: 100%;
             }
+            .film-info .left .select-option {
+                position: absolute;
+                left: 50%; 
+                top: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 100%;
+                cursor: pointer;
+                width: 20%;
+                background-color: #0a2029;
+                box-shadow: 0 0 5px #ee6123;
+            }
+            .film-info .left .select-option img{
+                width: 100%;
+                height: 100%;
+            }
+            .film-info .left .select-option:hover { 
+                box-shadow: 0px 0px 10px #fff;
+            }
+            .film-info .left .list-select {
+                position: absolute;
+                left: 50%; 
+                top: 50%;
+                transform: translate(-50%,-50%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+                transition: all 0.5s ease;
+                /*transition: flex-basis 500ms ease-in-out;*/
+            }
+            .film-info .left .hide-select {
+                width: 0%;
+            }
+            .film-info .left .show-select {
+                width: 60%;
+            }
+
+            .film-info .left .list-select .direct-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+            }
+            .film-info .left .list-select .direct-row.top{
+                border-bottom: .5px solid #eee;
+            } 
+            .select-item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                height: 100%;
+                background-color: rgba(10, 32, 41, 0.7);
+            }
+            /*.select-item.btn-favorite{
+                background: linear-gradient(-45deg, #fff, #aaa);
+            }*/
+            /*.select-item.btn-view{
+                background: linear-gradient(45deg, #fff, #aaa);
+            }*/
+            /*.select-item.btn-trailer{
+                background: linear-gradient(-135deg, #fff, #aaa);
+            }*/
+            /*.select-item.btn-download{
+                background: linear-gradient(-225deg, #fff, #aaa);
+            }*/
+            .select-item img{
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+            .select-item img:hover{
+                filter: drop-shadow(0px 0px 10px #fff);
+            }
+
+            .btn-favorite {
+                border-top-left-radius: 100%;
+                padding: 17%;
+                border-right: .5px solid #eee;
+            }
+            .btn-view {
+                border-top-right-radius: 100%;
+                padding: 17%;
+            }
+            .btn-trailer {
+                border-bottom-left-radius: 100%;
+                padding: 17%;
+                border-right: .5px solid #eee;
+            }
+            .btn-download {
+                border-bottom-right-radius: 100%;
+                padding: 17%;
+            }
+            
             .film-info .left .icon:active,
             .film-info .left .icon:hover {
                 background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .link-control{
+                position: absolute;
+                bottom: 0px;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border: none;
+                padding: 3px 3px 0px 3px;
+                background: #00b050;
+                color: #fff;
+                font-weight: bold;
+            }
+            .trailer {
+                left: 15%;
+                width: 30%;
+            }
+            .download {
+                right: 15%;
+                width: 30%;
+                background: #4285f4;
+            }
+
+            .link-content {
+                border: 1px dashed #ccc;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border-bottom: none;
+                padding: 7px 10px;
             }
 
             .button-direct{
@@ -140,15 +264,17 @@ p{
                 }
     /*describe*/
     .describe {
-        padding: 10px 0;
+        padding-bottom: 10px;
         position: relative;
         line-height: 28px;
+        display: flex;
+        align-items: center;
     }
 
         .describe .box {
             background: #fff;
             margin-right: 10px;
-            padding: 5px 10px;
+            padding: 3px 10px;
             font-weight: bold;
             text-decoration: none;
             border-radius: 3px;
@@ -157,21 +283,47 @@ p{
 
         .describe ul {
             padding-top: 5px;
-            padding-left: 17px;
-            list-style: square;
+            padding-left: 0px;
             font-weight: bold;
             color: #fff;
             float: left;
             width: 70%;
+            display: flex;
+            flex-direction: column;
         }
 
             .describe ul li {
-                margin-right: 50px;
                 float: left;
                 font-size: 16px;
                 color: #eee;
+                list-style-type: none;
+                margin: 3px 50px 3px 0px;
             }
 
+        .type-tag{
+            padding: 3px 15px;
+            border-radius: 50px;
+            font-size: 13px;
+            background-color: #fff;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: .9;
+        }
+        .type-tag:hover {
+            text-decoration: none;
+            opacity: 1;
+            color: #fff;
+        }
+        .single-type{
+            background-color: #006400;
+        }
+        .action-type{
+            background-color: #ff0000;
+        }
+        .humor-type{
+            background-color: blue;
+        }
         .describe .imbd {
             width: 100px;
             position: absolute;
@@ -286,7 +438,7 @@ p{
 
                 .tag .tag-item .comment .content {
                     line-height: 15px;
-                    font-size: 18px;
+                    font-size: 16px;
                 }
 
     .comment .content .name-user {
@@ -428,7 +580,11 @@ p{
         }
 }
 @media screen and (max-width: 480px){
-    .tag{
+    /*.tag{
         display:none;
+    }*/
+    .tag .tag-item .comment .content {
+        line-height: normal;
+        font-size: 15px;
     }
 }

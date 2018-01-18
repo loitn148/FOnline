@@ -31,4 +31,18 @@ character.addEventListener('click', function () {
     character.setAttribute('class', 'title active');
 });
 
+$(document).ready(function(){
+    var _btn = $(".select-option");
+    var _listSelect = $(".list-select");
+    _btn.click(function(){
+        if(_listSelect.hasClass("hide-select")) {
+            _listSelect.removeClass("hide-select");
+            _listSelect.addClass("show-select");
+        } else if(_listSelect.hasClass("show-select")) {
+            _listSelect.removeClass("show-select");
+            _listSelect.addClass("hide-select");
+        }
+    });
+});
+
 

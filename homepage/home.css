@@ -240,6 +240,10 @@ select{
 	border-radius: 3px;
 	background-color: #ee6123; 
 	color: #fff;
+	
+}
+.btn-filter:hover{
+	background-color: #f28352;
 }
 
 /*--BODY - LIST PHIM--*/
@@ -477,9 +481,25 @@ select{
 	    font-weight: 600;
 	    color: #fff;
 	    text-transform: uppercase;
+	    transition: .5s;
+	    display: inline-block;
+	    position: relative;
 	}
-	.news-list-header a:hover, .movies-list-header a:hover{
+	.news-list-header a h1:after, .movies-list-header a h1:after{
+		content: '\00bb';
+	  	position: absolute;
+	  	opacity: 0;
+	  	top: 0;
+	  	right: -20px;
+	  	transition: 0.5s;
+	}
+	.news-list-header a:hover h1, .movies-list-header a:hover h1{
 		cursor: pointer;
+		padding-right: 25px;
+	}
+	.news-list-header a:hover h1:after, .movies-list-header a:hover h1:after{
+		opacity: 1;
+		right: 0;
 	}
 	.arrow-line{
 	  background-color: #ee6123;
